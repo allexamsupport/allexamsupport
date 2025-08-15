@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="All Exam Support - Expert tutoring for TOEFL, GRE, GMAT, IELTS, PMP, and more. Your success, supported.">
+    <meta name="keywords" content="exam tutoring, test preparation, TOEFL, GRE, GMAT, IELTS, PMP, CompTIA">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="All Exam Support - Excel in Every Exam">
+    <meta property="og:description" content="Expert tutoring for standardized tests and professional certifications. Fast, personalized support.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://allexamsupport.com">
+    <meta property="og:image" content="https://imgur.com/1bZIrbx">
+    
+    <title>All Exam Support - Excel in Every Exam | Expert Test Preparation</title>
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --white: #ffffff;
+            --black: #0a0a0a;
+            --gray: #6b7280;
+            --light-gray: #f9fafb;
+            --emerald: #10b981;
+            --emerald-dark: #059669;
+            --emerald-light: rgba(16, 185, 129, 0.1);
+            --border: rgba(0, 0, 0, 0.08);
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            --max-width: 1200px;
+            --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: var(--black);
+            background: var(--white);
+            line-height: 1.6;
+            letter-spacing: -0.011em;
+            font-size: 16px;
+            overflow-x: hidden;
+        }
+
+        /* Typography */
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 600;
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+        }
+
+        h2 {
+            font-size: clamp(1.75rem, 3vw, 2.25rem);
+            font-weight: 600;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        p {
+            color: var(--gray);
+            line-height: 1.7;
+        }
+
+        /* Container */
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 64px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+            color: var(--black);
+            font-weight: 600;
+            font-size: 1.125rem;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        .logo-img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--gray);
+            text-decoration: none;
+            font-size: 0.9375rem;
+            font-weight: 500;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--black);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--emerald);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            width: 100%;
+        }
+
+        .mobile-menu {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .mobile-menu svg {
+            width: 24px;
+            height: 24px;
+            stroke: var(--black);
+        }
+
+        /* Hero Section with Premium Animations */
+        .hero {
+            padding: 8rem 0 4rem;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            background: linear-gradient(180deg, var(--white) 0%, var(--light-gray) 100%);
+        }
+
+        /* Animated gradient orbs */
+        .hero::before,
+        .hero::after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.3;
+            animation: float 20s infinite;
+        }
+
+        .hero::before {
+            width: 400px;
+            height: 400px;
+            background: linear-gradient(135deg, var(--emerald), var(--emerald-light));
+            top: -200px;
+            left: -200px;
+            animation-delay: 0s;
+        }
+
+        .hero::after {
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(135deg, var(--emerald-light), var(--emerald));
+            bottom: -150px;
+            right: -150px;
+            animation-delay: 10s;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translate(0, 0) scale(1);
+            }
+            25% {
+                transform: translate(50px, -50px) scale(1.1);
+            }
+            50% {
+                transform: translate(-30px, 30px) scale(0.9);
+            }
+            75% {
+                transform: translate(30px, 50px) scale(1.05);
+            }
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Animated text reveal */
+        .hero h1 {
+            margin-bottom: 1.5rem;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        .hero h1 .word {
+            display: inline-block;
+            opacity: 0;
+            animation: wordReveal 0.6s ease forwards;
+            animation-delay: var(--delay);
+        }
+
+        @keyframes wordReveal {
+            from {
+                opacity: 0;
+                transform: translateY(20px) rotateX(-90deg);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) rotateX(0);
+            }
+        }
+
+        .hero h1 .highlight {
+            position: relative;
+            color: var(--emerald);
+            display: inline-block;
+        }
+
+        .hero h1 .highlight::after {
+            content: '';
+            position: absolute;
+            bottom: 4px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: var(--emerald);
+            opacity: 0.3;
+            animation: expandWidth 1s ease 0.5s forwards;
+            transform: scaleX(0);
+            transform-origin: left;
+        }
+
+        /* Animated particles */
+        .particles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: var(--emerald);
+            border-radius: 50%;
+            opacity: 0.3;
+            animation: particleFloat 15s infinite linear;
+        }
+
+        @keyframes particleFloat {
+            from {
+                transform: translateY(100vh) translateX(0);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.3;
+            }
+            90% {
+                opacity: 0.3;
+            }
+            to {
+                transform: translateY(-100vh) translateX(100px);
+                opacity: 0;
+            }
+        }
+
+        @keyframes expandWidth {
+            to {
+                transform: scaleX(1);
+            }
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--gray);
+            margin-bottom: 2.5rem;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease 0.2s forwards;
+        }
+
+        .hero-cta {
+            opacity: 0;
+            animation: fadeInUp 0.8s ease 0.4s forwards;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--emerald);
+            color: var(--white);
+            padding: 0.875rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .btn-primary:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .btn-primary:hover {
+            background: var(--emerald-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);
+        }
+
+        .btn-primary svg {
+            width: 20px;
+            height: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .btn-primary:hover svg {
+            transform: translateX(3px);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Supported Exams Section - Two Column Layout */
+        .exams {
+            padding: 4rem 0;
+            background: var(--light-gray);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-header h2 {
+            margin-bottom: 0.5rem;
+        }
+
+        .exams-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .exam-column {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            transition: var(--transition);
+        }
+
+        .exam-column:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-2px);
+        }
+
+        .exam-column h3 {
+            margin-bottom: 1.5rem;
+            color: var(--black);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .exam-column h3::before {
+            content: '';
+            width: 4px;
+            height: 24px;
+            background: var(--emerald);
+            border-radius: 2px;
+        }
+
+        .exam-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 0.75rem;
+        }
+
+        .exam-tag {
+            padding: 0.5rem 0.75rem;
+            background: var(--light-gray);
+            border-radius: 6px;
+            font-size: 0.875rem;
+            color: var(--gray);
+            text-align: center;
+            transition: var(--transition);
+            cursor: default;
+            border: 1px solid transparent;
+        }
+
+        .exam-tag:hover {
+            background: var(--emerald);
+            color: var(--white);
+            transform: scale(1.05);
+            border-color: var(--emerald);
+        }
+
+        /* Logo Carousel - Continuous Loop */
+        .logo-carousel {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            margin-top: 3rem;
+            padding: 2rem 0;
+            background: var(--white);
+            border-radius: 12px;
+        }
+
+        .logo-track {
+            display: flex;
+            width: fit-content;
+            animation: infiniteScroll 40s linear infinite;
+        }
+
+        .logo-track:hover {
+            animation-play-state: paused;
+        }
+
+        .logo-group {
+            display: flex;
+            padding-right: 2rem;
+        }
+
+        .logo-item {
+            flex: 0 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 150px;
+            position: relative;
+        }
+
+        .logo-item::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%) scaleX(0);
+            width: 50px;
+            height: 2px;
+            background: var(--emerald);
+            transition: transform 0.3s ease;
+        }
+
+        .logo-item:hover::after {
+            transform: translateX(-50%) scaleX(1);
+        }
+
+        .logo-item img {
+            max-height: 40px;
+            width: auto;
+            object-fit: contain;
+            filter: grayscale(100%) opacity(0.6);
+            transition: var(--transition);
+        }
+
+        .logo-item:hover img {
+            filter: grayscale(0%) opacity(1);
+            transform: scale(1.1);
+        }
+
+        @keyframes infiniteScroll {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* Why Choose Us */
+        .features {
+            padding: 4rem 0;
+            background: var(--white);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 1.5rem;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background: var(--emerald);
+            transition: width 0.3s ease;
+        }
+
+        .feature-card:hover::before {
+            width: 50px;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            width: 56px;
+            height: 56px;
+            margin: 0 auto 1.5rem;
+            background: var(--light-gray);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .feature-card:hover .feature-icon {
+            background: var(--emerald);
+            color: var(--white);
+            animation: iconPulse 0.6s ease;
+        }
+
+        @keyframes iconPulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        .feature-icon svg {
+            width: 24px;
+            height: 24px;
+            stroke: var(--emerald);
+            transition: var(--transition);
+        }
+
+        .feature-card:hover .feature-icon svg {
+            stroke: var(--white);
+        }
+
+        .feature-card h3 {
+            margin-bottom: 0.75rem;
+            color: var(--black);
+        }
+
+        .feature-card p {
+            font-size: 0.9375rem;
+            line-height: 1.6;
+        }
+
+        /* Social Connect */
+        .social-connect {
+            padding: 4rem 0;
+            background: linear-gradient(to bottom, var(--light-gray), var(--white));
+        }
+
+        .social-content {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .social-content h2 {
+            margin-bottom: 1rem;
+        }
+
+        .social-content p {
+            margin-bottom: 2rem;
+            font-size: 1.125rem;
+        }
+
+        .social-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .social-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 1.5rem;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--black);
+            font-weight: 500;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .social-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(16, 185, 129, 0.1), transparent);
+            transition: left 0.5s;
+        }
+
+        .social-btn:hover::before {
+            left: 100%;
+        }
+
+        .social-btn:hover {
+            border-color: var(--emerald);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .social-btn svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .social-btn.whatsapp:hover {
+            background: #25d366;
+            color: var(--white);
+            border-color: #25d366;
+        }
+
+        .social-btn.instagram:hover {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            color: var(--white);
+            border-color: transparent;
+        }
+
+        .social-btn.telegram:hover {
+            background: #0088cc;
+            color: var(--white);
+            border-color: #0088cc;
+        }
+
+        /* Footer */
+        footer {
+            padding: 2rem 0;
+            background: var(--white);
+            border-top: 1px solid var(--border);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-left {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+        }
+
+        .footer-links a {
+            color: var(--gray);
+            text-decoration: none;
+            font-size: 0.875rem;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--black);
+        }
+
+        .footer-right {
+            font-size: 0.875rem;
+            color: var(--gray);
+        }
+
+        .footer-right span {
+            color: #ef4444;
+            animation: heartbeat 1.5s ease infinite;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu {
+                display: block;
+            }
+
+            .hero {
+                padding: 6rem 0 3rem;
+                min-height: 60vh;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.125rem;
+            }
+
+            .exams-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .exam-list {
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .social-buttons {
+                flex-direction: column;
+            }
+
+            .social-btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-left {
+                flex-direction: column;
+            }
+
+            .footer-links {
+                justify-content: center;
+            }
+        }
+
+        /* Mobile Menu Overlay */
+        .mobile-nav {
+            display: none;
+            position: fixed;
+            top: 64px;
+            left: 0;
+            right: 0;
+            background: var(--white);
+            border-bottom: 1px solid var(--border);
+            padding: 1rem;
+            z-index: 999;
+            animation: slideDown 0.3s ease;
+        }
+
+        .mobile-nav.active {
+            display: block;
+        }
+
+        .mobile-nav-links {
+            list-style: none;
+        }
+
+        .mobile-nav-links li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .mobile-nav-links li:last-child {
+            border-bottom: none;
+        }
+
+        .mobile-nav-links a {
+            color: var(--black);
+            text-decoration: none;
+            font-weight: 500;
+            display: block;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Accessibility */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
+        /* Focus styles */
+        a:focus-visible,
+        button:focus-visible {
+            outline: 2px solid var(--emerald);
+            outline-offset: 2px;
+        }
+
+        /* Smooth reveal animation */
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .reveal-on-scroll.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <a href="#" class="logo" aria-label="All Exam Support Home">
+                <img src="https://i.imgur.com/1bZIrbx.png" alt="All Exam Support Logo" class="logo-img">
+                <span>All Exam Support</span>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#exams">Supported Exams</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="mobile-menu" aria-label="Toggle menu" onclick="toggleMobileMenu()">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </nav>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav" id="mobileNav">
+            <ul class="mobile-nav-links">
+                <li><a href="#home" onclick="toggleMobileMenu()">Home</a></li>
+                <li><a href="#about" onclick="toggleMobileMenu()">About</a></li>
+                <li><a href="#exams" onclick="toggleMobileMenu()">Supported Exams</a></li>
+                <li><a href="#contact" onclick="toggleMobileMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section with Premium Animations -->
+    <section class="hero" id="home">
+        <div class="particles" id="particles"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>
+                    <span class="word" style="--delay: 0.1s">Excel</span>
+                    <span class="word" style="--delay: 0.2s">in</span>
+                    <span class="word" style="--delay: 0.3s">Every</span>
+                    <span class="word" style="--delay: 0.4s">Exam.</span>
+                    <br>
+                    <span class="highlight word" style="--delay: 0.5s">Your</span>
+                    <span class="highlight word" style="--delay: 0.6s">Success,</span>
+                    <span class="highlight word" style="--delay: 0.7s">Supported.</span>
+                </h1>
+                <p class="hero-subtitle">Expert tutoring for standardized tests and professional certifications with personalized guidance.</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn-primary">
+                        Get Exam Help Now
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Supported Exams Section - Two Column Layout -->
+    <section class="exams" id="exams">
+        <div class="container">
+            <div class="section-header reveal-on-scroll">
+                <h2>Endless Exams Supported</h2>
+                <p>Comprehensive support for all standardized tests and certifications</p>
+            </div>
+
+            <div class="exams-grid">
+                <div class="exam-column reveal-on-scroll">
+                    <h3>Standardized Tests</h3>
+                    <div class="exam-list">
+                        <span class="exam-tag">TOEFL</span>
+                        <span class="exam-tag">IELTS</span>
+                        <span class="exam-tag">GRE</span>
+                        <span class="exam-tag">GMAT</span>
+                        <span class="exam-tag">SAT</span>
+                        <span class="exam-tag">LSAT</span>
+                        <span class="exam-tag">MCCQE</span>
+                        <span class="exam-tag">ACCA</span>
+                        <span class="exam-tag">NMAT</span>
+                        <span class="exam-tag">CLT</span>
+                        <span class="exam-tag">OET</span>
+                        <span class="exam-tag">PTE</span>
+                    </div>
+                </div>
+                <div class="exam-column reveal-on-scroll">
+                    <h3>Professional Certifications</h3>
+                    <div class="exam-list">
+                        <span class="exam-tag">PMP</span>
+                        <span class="exam-tag">CompTIA A+</span>
+                        <span class="exam-tag">Security+</span>
+                        <span class="exam-tag">Network+</span>
+                        <span class="exam-tag">CAPM</span>
+                        <span class="exam-tag">LEED</span>
+                        <span class="exam-tag">CPC</span>
+                        <span class="exam-tag">Microsoft Azure</span>
+                        <span class="exam-tag">AWS</span>
+                        <span class="exam-tag">CCNA</span>
+                        <span class="exam-tag">AAPC</span>
+                        <span class="exam-tag">Six Sigma</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Logo Carousel - Continuous Loop -->
+            <div class="logo-carousel reveal-on-scroll">
+                <div class="logo-track">
+                    <!-- First set -->
+                    <div class="logo-group">
+                        <div class="logo-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/ETS_GRE_Logo.jpg" alt="GRE Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.amideast.org%2Fsites%2Fdefault%2Ffiles%2FGMAT%2520Logo.JPG&f=1&nofb=1" alt="GMAT Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://www.ets.org/content/dam/ets-org/logo/toefl-logo-black.svg" alt="TOEFL Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://s3.eu-west-2.amazonaws.com/ielts-web-static/production/IELTS-logos/IELTS-Logo-Trademark.png" alt="IELTS Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogos-world.net%2Fwp-content%2Fuploads%2F2023%2F07%2FSAT-Logo.png&f=1&nofb=1" alt="SAT Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogowik.com%2Fcontent%2Fuploads%2Fimages%2Fpmi-project-management-institute3441.jpg&f=1&nofb=1" alt="PMP Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Comptia-logo.svg" alt="CompTIA Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft Logo">
+                        </div>
+                    </div>
+                    <!-- Duplicate for seamless loop -->
+                    <div class="logo-group">
+                        <div class="logo-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/ETS_GRE_Logo.jpg" alt="GRE Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.amideast.org%2Fsites%2Fdefault%2Ffiles%2FGMAT%2520Logo.JPG&f=1&nofb=1" alt="GMAT Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://www.ets.org/content/dam/ets-org/logo/toefl-logo-black.svg" alt="TOEFL Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://s3.eu-west-2.amazonaws.com/ielts-web-static/production/IELTS-logos/IELTS-Logo-Trademark.png" alt="IELTS Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogos-world.net%2Fwp-content%2Fuploads%2F2023%2F07%2FSAT-Logo.png&f=1&nofb=1" alt="SAT Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogowik.com%2Fcontent%2Fuploads%2Fimages%2Fpmi-project-management-institute3441.jpg&f=1&nofb=1" alt="PMP Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Comptia-logo.svg" alt="CompTIA Logo">
+                        </div>
+                        <div class="logo-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft Logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="features" id="about">
+        <div class="container">
+            <div class="section-header reveal-on-scroll">
+                <h2>Why Choose All Exam Support?</h2>
+                <p>Three reasons we're the right choice for acing your exam</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card reveal-on-scroll">
+                    <div class="feature-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                    </div>
+                    <h3>Verified Solvers</h3>
+                    <p>All our sovlers are certified experts with proven track records and years of subject area experience.</p>
+                </div>
+
+                <div class="feature-card reveal-on-scroll">
+                    <div class="feature-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                    </div>
+                    <h3>All Major Exams</h3>
+                    <p>From TOEFL to PMP, we cover every major standardized test and professional certification exam.</p>
+                </div>
+
+                <div class="feature-card reveal-on-scroll">
+                    <div class="feature-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3>Fast, Personalized Support</h3>
+                    <p>Get instant responses and remote assistance to your specific needs and timeline.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Connect Section -->
+    <section class="social-connect" id="contact">
+        <div class="container">
+            <div class="social-content reveal-on-scroll">
+                <h2>Connect Instantly</h2>
+                <p>Choose your preferred platform to start your exam preparation journey today.</p>
+                
+                <div class="social-buttons">
+                    <a href="https://api.whatsapp.com/send?phone=447450517950" class="social-btn whatsapp" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 012.41 5.83c0 4.54-3.7 8.23-8.24 8.23-1.48 0-2.93-.39-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.188 8.188 0 01-1.26-4.38c.01-4.54 3.7-8.23 8.25-8.23M8.53 7.33c-.16 0-.43.06-.66.31-.22.25-.87.86-.87 2.07 0 1.22.89 2.39 1 2.56.14.17 1.76 2.67 4.25 3.73.59.27 1.05.42 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.46-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.16-.48-.27-.25-.14-1.47-.74-1.69-.82-.23-.08-.37-.12-.56.12-.16.25-.64.81-.78.97-.15.17-.29.19-.53.07-.26-.13-1.06-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.12-.24-.01-.39.11-.5.11-.11.27-.29.37-.44.13-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.11-.56-1.35-.77-1.84-.2-.48-.4-.42-.56-.43-.14 0-.3-.01-.47-.01z"/>
+                        </svg>
+                        WhatsApp
+                    </a>
+
+                    <a href="https://instagram.com/allexamsupport" class="social-btn instagram" target="_blank" rel="noopener noreferrer">
+                        <svg fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.405a1.44 1.44 0 112.881.001 1.44 1.44 0 01-2.881-.001z"/>
+                        </svg>
+                        Instagram
+                    </a>
+
+                    <a href="https://t.me/allexamsupportHQ" class="social-btn telegram" target="_blank" rel="noopener noreferrer">
+                        <svg fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"/>
+                        </svg>
+                        Telegram
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="logo">
+                        <img src="https://i.imgur.com/1bZIrbx.png" alt="All Exam Support Logo" class="logo-img">
+                        <span>All Exam Support</span>
+                    </div>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#exams">Exams</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <p>© 2025 All Exam Support. Made with <span>❤️</span> for students worldwide.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Generate animated particles
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            if (!particlesContainer) return;
+            
+            for (let i = 0; i < 15; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 15 + 's';
+                particle.style.animationDuration = (15 + Math.random() * 10) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const mobileNav = document.getElementById('mobileNav');
+            mobileNav.classList.toggle('active');
+        }
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerOffset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Update active nav link on scroll
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-links a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.pageYOffset >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Header scroll effect
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            const currentScroll = window.pageYOffset;
+
+            if (currentScroll > 50) {
+                header.style.backdropFilter = 'blur(20px)';
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.boxShadow = '0 1px 3px rgba(0,0,0,0.1)';
+            } else {
+                header.style.backdropFilter = 'blur(20px)';
+                header.style.background = 'rgba(255, 255, 255, 0.8)';
+                header.style.boxShadow = 'none';
+            }
+
+            lastScroll = currentScroll;
+        });
+
+        // Intersection Observer for reveal animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                    // Optional: stop observing after reveal
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Initialize on DOM load
+        document.addEventListener('DOMContentLoaded', () => {
+            // Create particles
+            createParticles();
+            
+            // Observe elements for animation
+            const revealElements = document.querySelectorAll('.reveal-on-scroll');
+            revealElements.forEach(el => {
+                observer.observe(el);
+            });
+
+            // Add stagger effect to exam tags
+            const examTags = document.querySelectorAll('.exam-tag');
+            examTags.forEach((tag, index) => {
+                tag.style.animationDelay = `${index * 0.05}s`;
+                tag.style.animation = 'fadeInUp 0.6s ease forwards';
+                tag.style.opacity = '0';
+            });
+        });
+
+        // Performance optimization - lazy load images
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.classList.add('loaded');
+                        observer.unobserve(img);
+                    }
+                });
+            });
+
+            document.querySelectorAll('img').forEach(img => {
+                imageObserver.observe(img);
+            });
+        }
+
+        // Enhanced hover effect for social buttons
+        document.querySelectorAll('.social-btn').forEach(button => {
+            button.addEventListener('mouseenter', function(e) {
+                const rect = this.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                this.style.setProperty('--mouse-x', `${x}px`);
+                this.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+
+        // Add ripple effect to primary button
+        document.querySelectorAll('.btn-primary').forEach(button => {
+            button.addEventListener('click', function(e) {
+                const ripple = document.createElement('span');
+                const rect = this.getBoundingClientRect();
+                const size = Math.max(rect.width, rect.height);
+                const x = e.clientX - rect.left - size / 2;
+                const y = e.clientY - rect.top - size / 2;
+                
+                ripple.style.width = ripple.style.height = size + 'px';
+                ripple.style.left = x + 'px';
+                ripple.style.top = y + 'px';
+                ripple.style.position = 'absolute';
+                ripple.style.borderRadius = '50%';
+                ripple.style.background = 'rgba(255,255,255,0.5)';
+                ripple.style.transform = 'scale(0)';
+                ripple.style.animation = 'ripple 0.6s ease-out';
+                
+                this.appendChild(ripple);
+                
+                setTimeout(() => {
+                    ripple.remove();
+                }, 600);
+            });
+        });
+
+        // Add ripple animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes ripple {
+                to {
+                    transform: scale(4);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
