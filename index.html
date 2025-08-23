@@ -1,19 +1,41 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="All Exam Support - Expert tutoring for TOEFL, GRE, GMAT, IELTS, PMP, and more. Your success, supported.">
-    <meta name="keywords" content="exam tutoring, test preparation, TOEFL, GRE, GMAT, IELTS, PMP, CompTIA">
+    <meta name="description" content="All Exam Support - Expert Remote Assistance for TOEFL, GRE, GMAT, IELTS, PMP, and more. Your success, supported.">
+    <meta name="keywords" content="exam help, test preparation, TOEFL, GRE, GMAT, IELTS, PMP, CompTIA">
     
     <!-- Open Graph Tags -->
-    <meta property="og:title" content="All Exam Support - Excel in Every Exam">
-    <meta property="og:description" content="Expert tutoring for standardized tests and professional certifications. Fast, personalized support.">
+    <meta property="og:title" content="All Exam Support - Pass Any Exam!">
+    <meta property="og:description" content="Expert Assistance for standardized tests and professional certifications. Fast, personalized support.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://allexamsupport.com">
-    <meta property="og:image" content="https://imgur.com/1bZIrbx">
+    <meta property="og:image" content="https://i.postimg.cc/8CY7pQdg/Clean-Shot-2025-08-23-at-18-56-30-2x.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/8CY7pQdg/Clean-Shot-2025-08-23-at-18-56-30-2x.png">
+    <link rel="apple-touch-icon" href="https://i.postimg.cc/8CY7pQdg/Clean-Shot-2025-08-23-at-18-56-30-2x.png">
     
     <title>All Exam Support - Excel in Every Exam | Expert Test Preparation</title>
+    
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1121170263277927');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1121170263277927&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
     
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -113,17 +135,13 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 64px;
+            height: 72px;
         }
 
         .logo {
             display: flex;
             align-items: center;
-            gap: 0.75rem;
             text-decoration: none;
-            color: var(--black);
-            font-weight: 600;
-            font-size: 1.125rem;
             transition: transform 0.3s ease;
         }
 
@@ -132,8 +150,8 @@
         }
 
         .logo-img {
-            width: 40px;
-            height: 40px;
+            height: 52px;
+            width: auto;
             object-fit: contain;
         }
 
@@ -411,12 +429,13 @@
             }
         }
 
-        /* Supported Exams Section - Two Column Layout */
+        /* Supported Exams Section - Two Column Layout with Expandable Cards */
         .exams {
             padding: 4rem 0;
             background: var(--light-gray);
             position: relative;
-            overflow: hidden;
+            overflow: visible;
+            z-index: 10;
         }
 
         .section-header {
@@ -428,11 +447,32 @@
             margin-bottom: 0.5rem;
         }
 
+        .exam-notice {
+            background: var(--emerald-light);
+            border-left: 4px solid var(--emerald);
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 0 auto 2rem;
+            max-width: 800px;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .exam-notice svg {
+            width: 24px;
+            height: 24px;
+            color: var(--emerald);
+            flex-shrink: 0;
+        }
+
         .exams-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 2rem;
             margin-bottom: 3rem;
+            position: relative;
+            z-index: 20;
         }
 
         .exam-column {
@@ -441,6 +481,7 @@
             border-radius: 12px;
             border: 1px solid var(--border);
             transition: var(--transition);
+            position: relative;
         }
 
         .exam-column:hover {
@@ -468,6 +509,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
             gap: 0.75rem;
+            position: relative;
         }
 
         .exam-tag {
@@ -478,26 +520,82 @@
             color: var(--gray);
             text-align: center;
             transition: var(--transition);
-            cursor: default;
+            cursor: pointer;
             border: 1px solid transparent;
+            position: relative;
         }
 
         .exam-tag:hover {
-            background: var(--emerald);
-            color: var(--white);
-            transform: scale(1.05);
+            background: var(--white);
             border-color: var(--emerald);
+            transform: scale(1.05);
+            z-index: 100;
         }
 
-        /* Logo Carousel - Continuous Loop */
+        /* Fixed exam details positioning */
+        .exam-details {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--white);
+            border: 1px solid var(--emerald);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-top: 8px;
+            width: 220px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            z-index: 1000;
+            pointer-events: none;
+        }
+
+        /* Adjust position for bottom row items */
+        .exam-list > .exam-tag:nth-last-child(-n+4) .exam-details {
+            top: auto;
+            bottom: 100%;
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+
+        .exam-tag:hover .exam-details {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+
+        .exam-details h4 {
+            font-size: 0.875rem;
+            margin-bottom: 0.5rem;
+            color: var(--black);
+        }
+
+        .exam-details p {
+            font-size: 0.75rem;
+            line-height: 1.4;
+            margin-bottom: 0.25rem;
+        }
+
+        .exam-details .duration {
+            color: var(--emerald);
+            font-weight: 600;
+        }
+
+        /* Logo Carousel - Full Width */
         .logo-carousel {
             position: relative;
-            width: 100%;
+            width: 100vw;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
             overflow: hidden;
             margin-top: 3rem;
             padding: 2rem 0;
             background: var(--white);
-            border-radius: 12px;
+            z-index: 5;
         }
 
         .logo-track {
@@ -652,10 +750,95 @@
             line-height: 1.6;
         }
 
+        /* FAQ Section */
+        .faq {
+            padding: 4rem 0;
+            background: var(--light-gray);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .faq h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .faq-item {
+            background: var(--white);
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            box-shadow: var(--shadow-md);
+        }
+
+        .faq-item.active {
+            border-color: var(--emerald);
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--black);
+            transition: all 0.3s ease;
+        }
+
+        .faq-question:hover {
+            color: var(--emerald);
+        }
+
+        .faq-icon {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-icon svg {
+            width: 20px;
+            height: 20px;
+            stroke: currentColor;
+            stroke-width: 2;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+
+        .faq-answer-content {
+            padding: 0 1.5rem 1.5rem;
+            color: var(--gray);
+            line-height: 1.8;
+        }
+
         /* Social Connect */
         .social-connect {
             padding: 4rem 0;
-            background: linear-gradient(to bottom, var(--light-gray), var(--white));
+            background: linear-gradient(to bottom, var(--white), var(--light-gray));
         }
 
         .social-content {
@@ -742,9 +925,133 @@
 
         /* Footer */
         footer {
-            padding: 2rem 0;
+            padding: 3rem 0 1rem;
             background: var(--white);
             border-top: 1px solid var(--border);
+        }
+
+        .footer-top {
+            padding: 0 1.5rem 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .countries-served {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .countries-served h3 {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            color: var(--emerald);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .countries-carousel {
+            overflow: hidden;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .countries-track {
+            display: flex;
+            animation: countriesScroll 60s linear infinite;
+            width: fit-content;
+        }
+
+        .country-item {
+            padding: 0 1.5rem;
+            white-space: nowrap;
+            color: var(--gray);
+            font-size: 0.875rem;
+            position: relative;
+        }
+
+        .country-item::after {
+            content: '•';
+            position: absolute;
+            right: 0;
+            color: var(--emerald);
+            opacity: 0.5;
+        }
+
+        @keyframes countriesScroll {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-50%);
+            }
+        }
+
+        .payment-methods {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .payment-methods h3 {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            color: var(--emerald);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .crypto-icons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .crypto-icon {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--light-gray);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            padding: 8px;
+        }
+
+        .crypto-icon:hover {
+            background: var(--emerald-light);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .crypto-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .crypto-tooltip {
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--black);
+            color: var(--white);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            margin-bottom: 0.5rem;
+        }
+
+        .crypto-icon:hover .crypto-tooltip {
+            opacity: 1;
+            visibility: visible;
         }
 
         .footer-content {
@@ -753,12 +1060,20 @@
             align-items: center;
             flex-wrap: wrap;
             gap: 1rem;
+            padding: 2rem 1.5rem 1rem;
+            max-width: var(--max-width);
+            margin: 0 auto;
         }
 
         .footer-left {
             display: flex;
             align-items: center;
             gap: 2rem;
+        }
+
+        .footer-logo {
+            height: 52px;
+            width: auto;
         }
 
         .footer-links {
@@ -775,7 +1090,7 @@
         }
 
         .footer-links a:hover {
-            color: var(--black);
+            color: var(--emerald);
         }
 
         .footer-right {
@@ -828,6 +1143,14 @@
                 grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
             }
 
+            /* Mobile exam details fix */
+            .exam-list > .exam-tag:nth-last-child(-n+3) .exam-details {
+                top: auto;
+                bottom: 100%;
+                margin-top: 0;
+                margin-bottom: 8px;
+            }
+
             .features-grid {
                 grid-template-columns: 1fr;
                 gap: 2rem;
@@ -854,13 +1177,22 @@
             .footer-links {
                 justify-content: center;
             }
+
+            .crypto-icons {
+                gap: 1rem;
+            }
+
+            .crypto-icon {
+                width: 45px;
+                height: 45px;
+            }
         }
 
         /* Mobile Menu Overlay */
         .mobile-nav {
             display: none;
             position: fixed;
-            top: 64px;
+            top: 72px;
             left: 0;
             right: 0;
             background: var(--white);
@@ -943,14 +1275,14 @@
     <header>
         <nav class="container">
             <a href="#" class="logo" aria-label="All Exam Support Home">
-                <img src="https://i.imgur.com/1bZIrbx.png" alt="All Exam Support Logo" class="logo-img">
-                <span>All Exam Support</span>
+                <img src="https://i.postimg.cc/8CY7pQdg/Clean-Shot-2025-08-23-at-18-56-30-2x.png" alt="All Exam Support" class="logo-img">
             </a>
             
             <ul class="nav-links">
                 <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#exams">Exams</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#exams">Supported Exams</a></li>
+                <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
 
@@ -965,8 +1297,9 @@
         <div class="mobile-nav" id="mobileNav">
             <ul class="mobile-nav-links">
                 <li><a href="#home" onclick="toggleMobileMenu()">Home</a></li>
+                <li><a href="#exams" onclick="toggleMobileMenu()">Exams</a></li>
                 <li><a href="#about" onclick="toggleMobileMenu()">About</a></li>
-                <li><a href="#exams" onclick="toggleMobileMenu()">Supported Exams</a></li>
+                <li><a href="#faq" onclick="toggleMobileMenu()">FAQ</a></li>
                 <li><a href="#contact" onclick="toggleMobileMenu()">Contact</a></li>
             </ul>
         </div>
@@ -987,10 +1320,10 @@
                     <span class="highlight word" style="--delay: 0.6s">Success,</span>
                     <span class="highlight word" style="--delay: 0.7s">Supported.</span>
                 </h1>
-                <p class="hero-subtitle">Expert tutoring for standardized tests and professional certifications with personalized guidance.</p>
+                <p class="hero-subtitle">Expert remote assistance for standardized tests and professional certifications with personalized guidance.</p>
                 <div class="hero-cta">
                     <a href="#contact" class="btn-primary">
-                        Get Exam Help Now
+                        Book Your Exam!
                         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
                         </svg>
@@ -1000,52 +1333,227 @@
         </div>
     </section>
 
-    <!-- Supported Exams Section - Two Column Layout -->
+    <!-- Supported Exams Section - Two Column Layout with Expandable Cards -->
     <section class="exams" id="exams">
         <div class="container">
             <div class="section-header reveal-on-scroll">
-                <h2>Endless Exams Supported</h2>
-                <p>Comprehensive support for all standardized tests and certifications</p>
+                <h2>Supported Exams</h2>
+                <p>Comprehensive Assistance for major standardized tests and certifications</p>
+            </div>
+
+            <div class="exam-notice reveal-on-scroll">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <p><strong>Note:</strong> This list is not exhaustive. We provide customized support for various other exams based on your specific requirements. Contact us for personalized assistance.</p>
             </div>
 
             <div class="exams-grid">
                 <div class="exam-column reveal-on-scroll">
                     <h3>Standardized Tests</h3>
                     <div class="exam-list">
-                        <span class="exam-tag">TOEFL</span>
-                        <span class="exam-tag">IELTS</span>
-                        <span class="exam-tag">GRE</span>
-                        <span class="exam-tag">GMAT</span>
-                        <span class="exam-tag">SAT</span>
-                        <span class="exam-tag">LSAT</span>
-                        <span class="exam-tag">MCCQE</span>
-                        <span class="exam-tag">ACCA</span>
-                        <span class="exam-tag">NMAT</span>
-                        <span class="exam-tag">CLT</span>
-                        <span class="exam-tag">OET</span>
-                        <span class="exam-tag">PTE</span>
+                        <div class="exam-tag">
+                            TOEFL
+                            <div class="exam-details">
+                                <h4>TOEFL iBT</h4>
+                                <p>Test of English as a Foreign Language for non-native speakers applying to universities</p>
+                                <p class="duration">Duration: 3 hours</p>
+                            </div>
+                        </div>
+                        <div class="exam-tag">
+                            IELTS
+                            <div class="exam-details">
+                                <h4>IELTS Academic/General</h4>
+                                <p>International English Language Testing System for study, work, or migration</p>
+                                <p class="duration">Duration: 2h 45min</p>
+                            </div>
+                        </div>
+                        <div class="exam-tag">
+                            GRE
+                            <div class="exam-details">
+                                <h4>GRE General Test</h4>
+                                <p>Graduate Record Examination for MS/PhD admissions in USA/Canada</p>
+                                <p class="duration">Duration: 3h 45min</p>
+                            </div>
+                        </div>
+                        <div class="exam-tag">
+                            GMAT
+                            <div class="exam-details">
+                                <h4>GMAT Focus Edition</h4>
+                                <p>Graduate Management Admission Test for MBA and business programs</p>
+                                <p class="duration">Duration: 2h 15min</p>
+                            </div>
+                        </div>
+                        <div class="exam-tag">
+                            SAT
+                            <div class="exam-details">
+                                <h4>SAT Digital</h4>
+                                <p>Scholastic Assessment Test for undergraduate college admissions in USA</p>
+                                <p class="duration">Duration: 2h 14min</p>
+                            </div>
+                        </div>
+                        <div class="exam-tag">
+                            LSAT
+                            <div class="exam-details">
+                                <h4>LSAT</h4>
+                                <p>Law School Admission Test for JD programs in USA, Canada, and other countries</p>
+                                <p class="duration">Duration: 2h 30min</p>
+                            </div>
+                        </div>
+                        <div class="exam-tag">
+                            MCAT
+                            <div class="exam-details">
+                                <h4>MCCQE</h4>
+                                <p>Medical College Admission Test for medical school admissions in Canada</p>
+                                <p class="duration">Duration: 6h</p>
+                            </div>
+                        </div>
+                        <div class="exam-tag">
+                            ACT
+                            <div class="exam-details">
+                                <h4>ACT</h4>
+                                <p>American College Testing exam for undergraduate admissions</p>
+                                <p class="duration">Duration: 2h 55min</p>
+                            </div>
+                        </div>
+                        <div class="exam-tag">
+                            USMLE
+                            <div class="exam-details">
+                                <h4>USMLE Steps</h4>
+                                <p>United States Medical Licensing Examination for practicing medicine in USA</p>
+                                <p class="duration">Duration: 8-9 hours</p>
+                            </div>
+                        </div>
+                        <div class="exam-tag">
+                            PLAB
+                            <div class="exam-details">
+                                <h4>PLAB 1 & 2</h4>
+                                <p>Professional and Linguistic Assessments Board test for UK medical practice</p>
+                                <p class="duration">Duration: 3 hours</p>
+                            </div>
+                        </div>
+                        <div class="exam-tag">
+                            OET
+                            <div class="exam-details">
+                                <h4>OET Medicine/Nursing</h4>
+                                <p>Occupational English Test for healthcare professionals</p>
+                                <p class="duration">Duration: 3 hours</p>
+                            </div>
+                        </div>
+                        <div class="exam-tag">
+                            PTE
+                            <div class="exam-details">
+                                <h4>PTE Academic</h4>
+                                <p>Pearson Test of English for study abroad and immigration</p>
+                                <p class="duration">Duration: 2 hours</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="exam-column reveal-on-scroll">
                     <h3>Professional Certifications</h3>
                     <div class="exam-list">
-                        <span class="exam-tag">PMP</span>
-                        <span class="exam-tag">CompTIA A+</span>
-                        <span class="exam-tag">Security+</span>
-                        <span class="exam-tag">Network+</span>
-                        <span class="exam-tag">CAPM</span>
-                        <span class="exam-tag">LEED</span>
-                        <span class="exam-tag">CPC</span>
-                        <span class="exam-tag">Microsoft Azure</span>
-                        <span class="exam-tag">AWS</span>
-                        <span class="exam-tag">CCNA</span>
-                        <span class="exam-tag">AAPC</span>
-                        <span class="exam-tag">Six Sigma</span>
+                        <div class="exam-tag">
+                            PMP
+                            <div class="exam-details">
+                                <h4>PMP Certification</h4>
+                                <p>Project Management Professional by PMI for experienced project managers</p>
+                                <p class="duration">Duration: 230 min</p>
+                            </div>
+                        </div>
+                        <div class="exam-tag">
+                            CompTIA A+
+                            <div class="exam-details">
+                                <h4>CompTIA A+</h4>
+                                <p>Entry-level IT certification covering hardware, software, and troubleshooting</p>
+                                <p class="duration">Duration: 90 min each</p>
+                            </div>
+                        </div>
+                        <div class="exam-tag">
+                            Security+
+                            <div class="exam-details">
+                                <h4>CompTIA Security+</h4>
+                                <p>Cybersecurity fundamentals certification for IT security roles</p>
+                                <p class="duration">Duration: 90 minutes</p>
+                            </div>
+                        </div>
+                        <div class="exam-tag">
+                            Network+
+                            <div class="exam-details">
+                                <h4>CompTIA Network+</h4>
+                                <p>Networking concepts, infrastructure, and network troubleshooting</p>
+                                <p class="duration">Duration: 90 minutes</p>
+                            </div>
+                        </div>
+                        <div class="exam-tag">
+                            CAPM
+                            <div class="exam-details">
+                                <h4>CAPM by PMI</h4>
+                                <p>Certified Associate in Project Management for entry-level PMs</p>
+                                <p class="duration">Duration: 3 hours</p>
+                            </div>
+                        </div>
+                        <div class="exam-tag">
+                            LEED
+                            <div class="exam-details">
+                                <h4>LEED GA/AP</h4>
+                                <p>Leadership in Energy and Environmental Design green building certification</p>
+                                <p class="duration">Duration: 2 hours</p>
+                            </div>
+                        </div>
+                        <div class="exam-tag">
+                            CPC
+                            <div class="exam-details">
+                                <h4>CPC Medical Coding</h4>
+                                <p>Certified Professional Coder for medical billing and coding specialists</p>
+                                <p class="duration">Duration: 4 hours</p>
+                            </div>
+                        </div>
+                        <div class="exam-tag">
+                            Azure
+                            <div class="exam-details">
+                                <h4>Microsoft Azure</h4>
+                                <p>Cloud computing certifications: AZ-900, AZ-104, AZ-305, and more</p>
+                                <p class="duration">Duration: 2-3 hours</p>
+                            </div>
+                        </div>
+                        <div class="exam-tag">
+                            AWS
+                            <div class="exam-details">
+                                <h4>AWS Certifications</h4>
+                                <p>Amazon Web Services cloud practitioner to solutions architect</p>
+                                <p class="duration">Duration: 130-180 min</p>
+                            </div>
+                        </div>
+                        <div class="exam-tag">
+                            CCNA
+                            <div class="exam-details">
+                                <h4>Cisco CCNA</h4>
+                                <p>Cisco Certified Network Associate for network engineers</p>
+                                <p class="duration">Duration: 120 minutes</p>
+                            </div>
+                        </div>
+                        <div class="exam-tag">
+                            CISSP
+                            <div class="exam-details">
+                                <h4>CISSP</h4>
+                                <p>Certified Information Systems Security Professional for senior security roles</p>
+                                <p class="duration">Duration: 4 hours</p>
+                            </div>
+                        </div>
+                        <div class="exam-tag">
+                            Six Sigma
+                            <div class="exam-details">
+                                <h4>Six Sigma Belts</h4>
+                                <p>Process improvement methodology certification (Yellow, Green, Black Belt)</p>
+                                <p class="duration">Duration: 3-4 hours</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Logo Carousel - Continuous Loop -->
+            <!-- Logo Carousel - Full Width -->
             <div class="logo-carousel reveal-on-scroll">
                 <div class="logo-track">
                     <!-- First set -->
@@ -1111,8 +1619,8 @@
     <section class="features" id="about">
         <div class="container">
             <div class="section-header reveal-on-scroll">
-                <h2>Why Choose All Exam Support?</h2>
-                <p>Three reasons we're the right choice for acing your exam</p>
+                <h2>Why Choose All Exam Support</h2>
+                <p>Three reasons we're the right choice for your exam help</p>
             </div>
 
             <div class="features-grid">
@@ -1123,7 +1631,7 @@
                         </svg>
                     </div>
                     <h3>Verified Solvers</h3>
-                    <p>All our sovlers are certified experts with proven track records and years of subject area experience.</p>
+                    <p>All our solvers are certified experts with proven track records and years of subject area experience.</p>
                 </div>
 
                 <div class="feature-card reveal-on-scroll">
@@ -1133,7 +1641,7 @@
                         </svg>
                     </div>
                     <h3>All Major Exams</h3>
-                    <p>From TOEFL to PMP, we cover every major standardized test and professional certification exam.</p>
+                    <p>From GMAT to PMP, we cover every major standardized test and professional certification exam.</p>
                 </div>
 
                 <div class="feature-card reveal-on-scroll">
@@ -1143,7 +1651,78 @@
                         </svg>
                     </div>
                     <h3>Fast, Personalized Support</h3>
-                    <p>Get instant responses and remote assistance to your specific needs and timeline.</p>
+                    <p>Get instant responses and support tailored to your specific needs and timeline.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="faq-container">
+            <h2 class="reveal-on-scroll">Frequently Asked Questions</h2>
+            
+            <div class="faq-item reveal-on-scroll">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>How quickly can I get started?</span>
+                    <div class="faq-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        You can start immediately! Once you contact us through WhatsApp, Telegram, or Instagram, our team will assess your needs and explain the process. Move forward with booking your exam and acing it on the exam day!
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item reveal-on-scroll">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>What if my exam isn't listed on your website?</span>
+                    <div class="faq-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        No worries! The list on our website isn't exhaustive. We provide customized support for virtually any standardized test or professional certification. Simply reach out to us with your specific requirements, and we'll provide personalized support just for you.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item reveal-on-scroll">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>How do I know this is not a scam?</span>
+                    <div class="faq-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        First things first, we offer a "Pass Now, Pay Later" model. Here, we conduct the examination for you first, and you pay after you pass or as discussed. There's no financial burden on you. Just book, pass, be satisfied, and then pay!
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item reveal-on-scroll">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>What payment methods do you accept?</span>
+                    <div class="faq-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        We accept modern cryptocurrency payments including Bitcoin, Ethereum, USDT, USDC, Solana, Litecoin, and Monero. This ensures secure, fast, and private transactions for our global clientele.
+                    </div>
                 </div>
             </div>
         </div>
@@ -1157,27 +1736,26 @@
                 <p>Choose your preferred platform to start your exam preparation journey today.</p>
                 
                 <div class="social-buttons">
-                    <a href="https://api.whatsapp.com/send?phone=447450517950" class="social-btn whatsapp" target="_blank" rel="noopener noreferrer">
+                    <a href="https://api.whatsapp.com/send?phone=447450517950" class="social-btn whatsapp" target="_blank" rel="noopener noreferrer" onclick="fbq('track', 'Contact', {method: 'WhatsApp'});">
                         <svg viewBox="0 0 24 24" fill="currentColor">
                             <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 012.41 5.83c0 4.54-3.7 8.23-8.24 8.23-1.48 0-2.93-.39-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.188 8.188 0 01-1.26-4.38c.01-4.54 3.7-8.23 8.25-8.23M8.53 7.33c-.16 0-.43.06-.66.31-.22.25-.87.86-.87 2.07 0 1.22.89 2.39 1 2.56.14.17 1.76 2.67 4.25 3.73.59.27 1.05.42 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.46-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.16-.48-.27-.25-.14-1.47-.74-1.69-.82-.23-.08-.37-.12-.56.12-.16.25-.64.81-.78.97-.15.17-.29.19-.53.07-.26-.13-1.06-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.12-.24-.01-.39.11-.5.11-.11.27-.29.37-.44.13-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.11-.56-1.35-.77-1.84-.2-.48-.4-.42-.56-.43-.14 0-.3-.01-.47-.01z"/>
                         </svg>
                         WhatsApp
                     </a>
 
-                    <a href="https://instagram.com/allexamsupport" class="social-btn instagram" target="_blank" rel="noopener noreferrer">
+                    <a href="https://instagram.com/allexamsupportglobal" class="social-btn instagram" target="_blank" rel="noopener noreferrer" onclick="fbq('track', 'Contact', {method: 'Instagram'});">
                         <svg fill="currentColor" viewBox="0 0 24 24">
                             <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.405a1.44 1.44 0 112.881.001 1.44 1.44 0 01-2.881-.001z"/>
                         </svg>
                         Instagram
                     </a>
 
-                    <a href="https://t.me/allexamsupportHQ" class="social-btn telegram" target="_blank" rel="noopener noreferrer">
+                    <a href="https://t.me/allexamsupportHQ" class="social-btn telegram" target="_blank" rel="noopener noreferrer" onclick="fbq('track', 'Contact', {method: 'Telegram'});">
                         <svg fill="currentColor" viewBox="0 0 24 24">
                             <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"/>
                         </svg>
                         Telegram
                     </a>
-
                 </div>
             </div>
         </div>
@@ -1185,28 +1763,90 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-left">
-                    <div class="logo">
-                        <img src="https://i.imgur.com/1bZIrbx.png" alt="All Exam Support Logo" class="logo-img">
-                        <span>All Exam Support</span>
+        <div class="footer-top">
+            <div class="countries-served">
+                <h3>Serving Students Worldwide</h3>
+                <div class="countries-carousel">
+                    <div class="countries-track" id="countriesTrack">
+                        <!-- Countries will be dynamically added -->
                     </div>
-                    <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#exams">Exams</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
                 </div>
-                <div class="footer-right">
-                    <p>© 2025 All Exam Support. Made with <span>❤️</span> for students worldwide.</p>
+            </div>
+
+            <div class="payment-methods">
+                <h3>We Accept Cryptocurrency</h3>
+                <div class="crypto-icons">
+                    <div class="crypto-icon">
+                        <span class="crypto-tooltip">Bitcoin</span>
+                        <img src="https://www.cryptologos.cc/logos/bitcoin-btc-logo.png?v=040" alt="Bitcoin">
+                    </div>
+                    <div class="crypto-icon">
+                        <span class="crypto-tooltip">Ethereum</span>
+                        <img src="https://www.cryptologos.cc/logos/ethereum-eth-logo.png?v=040" alt="Ethereum">
+                    </div>
+                    <div class="crypto-icon">
+                        <span class="crypto-tooltip">Tether USDT</span>
+                        <img src="https://www.cryptologos.cc/logos/tether-usdt-logo.png?v=040" alt="Tether">
+                    </div>
+                    <div class="crypto-icon">
+                        <span class="crypto-tooltip">Solana</span>
+                        <img src="https://www.cryptologos.cc/logos/solana-sol-logo.png?v=040" alt="Solana">
+                    </div>
+                    <div class="crypto-icon">
+                        <span class="crypto-tooltip">Monero</span>
+                        <img src="https://www.cryptologos.cc/logos/monero-xmr-logo.png?v=040" alt="Monero">
+                    </div>
+                    <div class="crypto-icon">
+                        <span class="crypto-tooltip">USD Coin</span>
+                        <img src="https://www.cryptologos.cc/logos/usd-coin-usdc-logo.png?v=040" alt="USDC">
+                    </div>
+                    <div class="crypto-icon">
+                        <span class="crypto-tooltip">Litecoin</span>
+                        <img src="https://www.cryptologos.cc/logos/litecoin-ltc-logo.png?v=040" alt="Litecoin">
+                    </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <div class="footer-left">
+                <img src="https://i.postimg.cc/8CY7pQdg/Clean-Shot-2025-08-23-at-18-56-30-2x.png" alt="All Exam Support" class="footer-logo">
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#exams">Exams</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <p>© 2025 All Exam Support. Made with <span>❤️</span> for students worldwide.</p>
             </div>
         </div>
     </footer>
 
     <script>
+        // Countries data
+        const countries = [
+            'United States', 'Canada', 'United Kingdom', 'Australia', 'Germany', 'France', 'India', 'China', 'Japan', 'South Korea',
+            'Brazil', 'Mexico', 'Argentina', 'Spain', 'Italy', 'Netherlands', 'Belgium', 'Switzerland', 'Sweden', 'Norway',
+            'Denmark', 'Finland', 'Russia', 'Poland', 'Turkey', 'Saudi Arabia', 'UAE', 'Singapore', 'Malaysia', 'Thailand',
+            'Indonesia', 'Philippines', 'Vietnam', 'South Africa', 'Egypt', 'Nigeria', 'Kenya', 'Israel', 'New Zealand', 'Ireland'
+        ];
+
+        // Initialize countries carousel
+        function initCountriesCarousel() {
+            const track = document.getElementById('countriesTrack');
+            if (!track) return;
+            
+            // Create two sets for seamless loop
+            const countriesHTML = countries.map(country => 
+                `<span class="country-item">${country}</span>`
+            ).join('');
+            
+            track.innerHTML = countriesHTML + countriesHTML;
+        }
+
         // Generate animated particles
         function createParticles() {
             const particlesContainer = document.getElementById('particles');
@@ -1220,6 +1860,22 @@
                 particle.style.animationDuration = (15 + Math.random() * 10) + 's';
                 particlesContainer.appendChild(particle);
             }
+        }
+
+        // FAQ Accordion
+        function toggleFAQ(element) {
+            const faqItem = element.parentElement;
+            const allItems = document.querySelectorAll('.faq-item');
+            
+            // Close all other items
+            allItems.forEach(item => {
+                if (item !== faqItem) {
+                    item.classList.remove('active');
+                }
+            });
+            
+            // Toggle current item
+            faqItem.classList.toggle('active');
         }
 
         // Mobile menu toggle
@@ -1305,6 +1961,9 @@
 
         // Initialize on DOM load
         document.addEventListener('DOMContentLoaded', () => {
+            // Initialize countries carousel
+            initCountriesCarousel();
+            
             // Create particles
             createParticles();
             
@@ -1339,56 +1998,6 @@
                 imageObserver.observe(img);
             });
         }
-
-        // Enhanced hover effect for social buttons
-        document.querySelectorAll('.social-btn').forEach(button => {
-            button.addEventListener('mouseenter', function(e) {
-                const rect = this.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-                
-                this.style.setProperty('--mouse-x', `${x}px`);
-                this.style.setProperty('--mouse-y', `${y}px`);
-            });
-        });
-
-        // Add ripple effect to primary button
-        document.querySelectorAll('.btn-primary').forEach(button => {
-            button.addEventListener('click', function(e) {
-                const ripple = document.createElement('span');
-                const rect = this.getBoundingClientRect();
-                const size = Math.max(rect.width, rect.height);
-                const x = e.clientX - rect.left - size / 2;
-                const y = e.clientY - rect.top - size / 2;
-                
-                ripple.style.width = ripple.style.height = size + 'px';
-                ripple.style.left = x + 'px';
-                ripple.style.top = y + 'px';
-                ripple.style.position = 'absolute';
-                ripple.style.borderRadius = '50%';
-                ripple.style.background = 'rgba(255,255,255,0.5)';
-                ripple.style.transform = 'scale(0)';
-                ripple.style.animation = 'ripple 0.6s ease-out';
-                
-                this.appendChild(ripple);
-                
-                setTimeout(() => {
-                    ripple.remove();
-                }, 600);
-            });
-        });
-
-        // Add ripple animation
-        const style = document.createElement('style');
-        style.textContent = `
-            @keyframes ripple {
-                to {
-                    transform: scale(4);
-                    opacity: 0;
-                }
-            }
-        `;
-        document.head.appendChild(style);
     </script>
 </body>
 </html>
