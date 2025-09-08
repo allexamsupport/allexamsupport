@@ -1,2003 +1,2023 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="All Exam Support - Expert Remote Assistance for TOEFL, GRE, GMAT, IELTS, PMP, and more. Your success, supported.">
-    <meta name="keywords" content="exam help, test preparation, TOEFL, GRE, GMAT, IELTS, PMP, CompTIA">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#006A4E">
+  
+  <!-- SEO Meta Tags -->
+  <title>ExamHelpBD — Expert Test Prep & Study Abroad Consultancy in Bangladesh</title>
+  <meta name="description" content="Bangladesh's premier test preparation center for SAT, LSAT, GMAT, GRE, IELTS, and TOEFL. Expert guidance for studying abroad since 2012. Join 1200+ successful students.">
+  <meta name="keywords" content="SAT Bangladesh, GRE prep Dhaka, IELTS coaching, TOEFL preparation, study abroad Bangladesh, GMAT tutoring, LSAT Bangladesh">
+  <meta name="author" content="ExamHelpBD">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://examhelpbd.com/">
+  <meta property="og:title" content="ExamHelpBD — Expert Test Prep & Study Abroad Consultancy">
+  <meta property="og:description" content="Bangladesh's premier test preparation center. Expert guidance for studying abroad since 2012.">
+  <meta property="og:image" content="https://i.imgur.com/vt66Lb1.png">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://i.imgur.com/vt66Lb1.png">
+  
+  <style>
+    /* CSS Variables & Design System */
+    :root {
+      --green: #006A4E;
+      --green-light: #0a8a67;
+      --green-dark: #004d38;
+      --green-soft: #e6f4f0;
+      --red: #F42A41;
+      --red-light: #ff5668;
+      --red-dark: #b31427;
+      --red-soft: #ffe5e8;
+      --yellow: #FFD700;
+      --blue: #0066CC;
+      --blue-light: #4d94ff;
+      
+      --white: #FFFFFF;
+      --gray-50: #f9fafb;
+      --gray-100: #f3f4f6;
+      --gray-200: #e5e7eb;
+      --gray-300: #d1d5db;
+      --gray-400: #9ca3af;
+      --gray-500: #6b7280;
+      --gray-600: #4b5563;
+      --gray-700: #374151;
+      --gray-800: #1f2937;
+      --gray-900: #111827;
+      
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+      --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+      --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.12);
+      --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.15);
+      --shadow-2xl: 0 25px 60px rgba(0, 0, 0, 0.2);
+      
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --radius-xl: 24px;
+      --radius-2xl: 32px;
+      
+      --container: 1280px;
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      
+      --font-primary: 'Inter', system-ui, -apple-system, sans-serif;
+      --font-heading: 'Plus Jakarta Sans', 'Inter', sans-serif;
+    }
     
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="All Exam Support - Pass Any Exam!">
-    <meta property="og:description" content="Expert Assistance for standardized tests and professional certifications. Fast, personalized support.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://allexamsupport.com">
-    <meta property="og:image" content="https://i.postimg.cc/8CY7pQdg/Clean-Shot-2025-08-23-at-18-56-30-2x.png">
+    /* Base Styles */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
     
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="https://i.postimg.cc/8CY7pQdg/Clean-Shot-2025-08-23-at-18-56-30-2x.png">
-    <link rel="apple-touch-icon" href="https://i.postimg.cc/8CY7pQdg/Clean-Shot-2025-08-23-at-18-56-30-2x.png">
+    html {
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
     
-    <title>All Exam Support - Excel in Every Exam | Expert Test Preparation</title>
+    body {
+      font-family: var(--font-primary);
+      background: var(--white);
+      color: var(--gray-800);
+      line-height: 1.6;
+      overflow-x: hidden;
+      position: relative;
+    }
     
-    <!-- Meta Pixel Code -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1121170263277927');
-    fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1121170263277927&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
+    /* Typography */
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--gray-900);
+      letter-spacing: -0.02em;
+    }
     
-    <!-- Preconnect to external domains -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    h1 { font-size: clamp(2.5rem, 5vw, 4rem); }
+    h2 { font-size: clamp(2rem, 4vw, 3rem); }
+    h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
+    h4 { font-size: clamp(1.25rem, 2.5vw, 1.5rem); }
     
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    p {
+      color: var(--gray-600);
+      line-height: 1.7;
+    }
     
-    <style>
-        :root {
-            --white: #ffffff;
-            --black: #0a0a0a;
-            --gray: #6b7280;
-            --light-gray: #f9fafb;
-            --emerald: #10b981;
-            --emerald-dark: #059669;
-            --emerald-light: rgba(16, 185, 129, 0.1);
-            --border: rgba(0, 0, 0, 0.08);
-            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-            --max-width: 1200px;
-            --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            color: var(--black);
-            background: var(--white);
-            line-height: 1.6;
-            letter-spacing: -0.011em;
-            font-size: 16px;
-            overflow-x: hidden;
-        }
-
-        /* Typography */
-        h1 {
-            font-size: clamp(2.5rem, 5vw, 3.5rem);
-            font-weight: 600;
-            line-height: 1.1;
-            letter-spacing: -0.03em;
-        }
-
-        h2 {
-            font-size: clamp(1.75rem, 3vw, 2.25rem);
-            font-weight: 600;
-            line-height: 1.2;
-            letter-spacing: -0.02em;
-        }
-
-        h3 {
-            font-size: 1.25rem;
-            font-weight: 600;
-            line-height: 1.4;
-        }
-
-        p {
-            color: var(--gray);
-            line-height: 1.7;
-        }
-
-        /* Container */
-        .container {
-            max-width: var(--max-width);
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
-
-        /* Header */
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border-bottom: 1px solid var(--border);
-            z-index: 1000;
-            transition: var(--transition);
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 72px;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-            transition: transform 0.3s ease;
-        }
-
-        .logo:hover {
-            transform: scale(1.05);
-        }
-
-        .logo-img {
-            height: 52px;
-            width: auto;
-            object-fit: contain;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-
-        .nav-links a {
-            color: var(--gray);
-            text-decoration: none;
-            font-size: 0.9375rem;
-            font-weight: 500;
-            transition: var(--transition);
-            position: relative;
-        }
-
-        .nav-links a:hover {
-            color: var(--black);
-        }
-
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--emerald);
-            transition: width 0.3s ease;
-        }
-
-        .nav-links a:hover::after,
-        .nav-links a.active::after {
-            width: 100%;
-        }
-
-        .mobile-menu {
-            display: none;
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 0.5rem;
-        }
-
-        .mobile-menu svg {
-            width: 24px;
-            height: 24px;
-            stroke: var(--black);
-        }
-
-        /* Hero Section with Premium Animations */
-        .hero {
-            padding: 8rem 0 4rem;
-            min-height: 80vh;
-            display: flex;
-            align-items: center;
-            position: relative;
-            background: linear-gradient(180deg, var(--white) 0%, var(--light-gray) 100%);
-        }
-
-        /* Animated gradient orbs */
-        .hero::before,
-        .hero::after {
-            content: '';
-            position: absolute;
-            border-radius: 50%;
-            filter: blur(80px);
-            opacity: 0.3;
-            animation: float 20s infinite;
-        }
-
-        .hero::before {
-            width: 400px;
-            height: 400px;
-            background: linear-gradient(135deg, var(--emerald), var(--emerald-light));
-            top: -200px;
-            left: -200px;
-            animation-delay: 0s;
-        }
-
-        .hero::after {
-            width: 300px;
-            height: 300px;
-            background: linear-gradient(135deg, var(--emerald-light), var(--emerald));
-            bottom: -150px;
-            right: -150px;
-            animation-delay: 10s;
-        }
-
-        @keyframes float {
-            0%, 100% {
-                transform: translate(0, 0) scale(1);
-            }
-            25% {
-                transform: translate(50px, -50px) scale(1.1);
-            }
-            50% {
-                transform: translate(-30px, 30px) scale(0.9);
-            }
-            75% {
-                transform: translate(30px, 50px) scale(1.05);
-            }
-        }
-
-        .hero-content {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-            position: relative;
-            z-index: 1;
-        }
-
-        /* Animated text reveal */
-        .hero h1 {
-            margin-bottom: 1.5rem;
-            opacity: 0;
-            animation: fadeInUp 0.8s ease forwards;
-        }
-
-        .hero h1 .word {
-            display: inline-block;
-            opacity: 0;
-            animation: wordReveal 0.6s ease forwards;
-            animation-delay: var(--delay);
-        }
-
-        @keyframes wordReveal {
-            from {
-                opacity: 0;
-                transform: translateY(20px) rotateX(-90deg);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0) rotateX(0);
-            }
-        }
-
-        .hero h1 .highlight {
-            position: relative;
-            color: var(--emerald);
-            display: inline-block;
-        }
-
-        .hero h1 .highlight::after {
-            content: '';
-            position: absolute;
-            bottom: 4px;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background: var(--emerald);
-            opacity: 0.3;
-            animation: expandWidth 1s ease 0.5s forwards;
-            transform: scaleX(0);
-            transform-origin: left;
-        }
-
-        /* Animated particles */
-        .particles {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            pointer-events: none;
-        }
-
-        .particle {
-            position: absolute;
-            width: 4px;
-            height: 4px;
-            background: var(--emerald);
-            border-radius: 50%;
-            opacity: 0.3;
-            animation: particleFloat 15s infinite linear;
-        }
-
-        @keyframes particleFloat {
-            from {
-                transform: translateY(100vh) translateX(0);
-                opacity: 0;
-            }
-            10% {
-                opacity: 0.3;
-            }
-            90% {
-                opacity: 0.3;
-            }
-            to {
-                transform: translateY(-100vh) translateX(100px);
-                opacity: 0;
-            }
-        }
-
-        @keyframes expandWidth {
-            to {
-                transform: scaleX(1);
-            }
-        }
-
-        .hero-subtitle {
-            font-size: 1.25rem;
-            color: var(--gray);
-            margin-bottom: 2.5rem;
-            opacity: 0;
-            animation: fadeInUp 0.8s ease 0.2s forwards;
-        }
-
-        .hero-cta {
-            opacity: 0;
-            animation: fadeInUp 0.8s ease 0.4s forwards;
-        }
-
-        .btn-primary {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: var(--emerald);
-            color: var(--white);
-            padding: 0.875rem 2rem;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1rem;
-            transition: var(--transition);
-            border: none;
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .btn-primary::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 0;
-            height: 0;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.2);
-            transform: translate(-50%, -50%);
-            transition: width 0.6s, height 0.6s;
-        }
-
-        .btn-primary:hover::before {
-            width: 300px;
-            height: 300px;
-        }
-
-        .btn-primary:hover {
-            background: var(--emerald-dark);
-            transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);
-        }
-
-        .btn-primary svg {
-            width: 20px;
-            height: 20px;
-            transition: transform 0.3s ease;
-        }
-
-        .btn-primary:hover svg {
-            transform: translateX(3px);
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Supported Exams Section - Two Column Layout with Expandable Cards */
-        .exams {
-            padding: 4rem 0;
-            background: var(--light-gray);
-            position: relative;
-            overflow: visible;
-            z-index: 10;
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        .section-header h2 {
-            margin-bottom: 0.5rem;
-        }
-
-        .exam-notice {
-            background: var(--emerald-light);
-            border-left: 4px solid var(--emerald);
-            padding: 1rem;
-            border-radius: 8px;
-            margin: 0 auto 2rem;
-            max-width: 800px;
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-        }
-
-        .exam-notice svg {
-            width: 24px;
-            height: 24px;
-            color: var(--emerald);
-            flex-shrink: 0;
-        }
-
-        .exams-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
-            margin-bottom: 3rem;
-            position: relative;
-            z-index: 20;
-        }
-
-        .exam-column {
-            background: var(--white);
-            padding: 2rem;
-            border-radius: 12px;
-            border: 1px solid var(--border);
-            transition: var(--transition);
-            position: relative;
-        }
-
-        .exam-column:hover {
-            box-shadow: var(--shadow-lg);
-            transform: translateY(-2px);
-        }
-
-        .exam-column h3 {
-            margin-bottom: 1.5rem;
-            color: var(--black);
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .exam-column h3::before {
-            content: '';
-            width: 4px;
-            height: 24px;
-            background: var(--emerald);
-            border-radius: 2px;
-        }
-
-        .exam-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-            gap: 0.75rem;
-            position: relative;
-        }
-
-        .exam-tag {
-            padding: 0.5rem 0.75rem;
-            background: var(--light-gray);
-            border-radius: 6px;
-            font-size: 0.875rem;
-            color: var(--gray);
-            text-align: center;
-            transition: var(--transition);
-            cursor: pointer;
-            border: 1px solid transparent;
-            position: relative;
-        }
-
-        .exam-tag:hover {
-            background: var(--white);
-            border-color: var(--emerald);
-            transform: scale(1.05);
-            z-index: 100;
-        }
-
-        /* Fixed exam details positioning */
-        .exam-details {
-            position: absolute;
-            top: 100%;
-            left: 50%;
-            transform: translateX(-50%);
-            background: var(--white);
-            border: 1px solid var(--emerald);
-            border-radius: 8px;
-            padding: 1rem;
-            margin-top: 8px;
-            width: 220px;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
-            z-index: 1000;
-            pointer-events: none;
-        }
-
-        /* Adjust position for bottom row items */
-        .exam-list > .exam-tag:nth-last-child(-n+4) .exam-details {
-            top: auto;
-            bottom: 100%;
-            margin-top: 0;
-            margin-bottom: 8px;
-        }
-
-        .exam-tag:hover .exam-details {
-            opacity: 1;
-            visibility: visible;
-            pointer-events: auto;
-        }
-
-        .exam-details h4 {
-            font-size: 0.875rem;
-            margin-bottom: 0.5rem;
-            color: var(--black);
-        }
-
-        .exam-details p {
-            font-size: 0.75rem;
-            line-height: 1.4;
-            margin-bottom: 0.25rem;
-        }
-
-        .exam-details .duration {
-            color: var(--emerald);
-            font-weight: 600;
-        }
-
-        /* Logo Carousel - Full Width */
-        .logo-carousel {
-            position: relative;
-            width: 100vw;
-            left: 50%;
-            right: 50%;
-            margin-left: -50vw;
-            margin-right: -50vw;
-            overflow: hidden;
-            margin-top: 3rem;
-            padding: 2rem 0;
-            background: var(--white);
-            z-index: 5;
-        }
-
-        .logo-track {
-            display: flex;
-            width: fit-content;
-            animation: infiniteScroll 40s linear infinite;
-        }
-
-        .logo-track:hover {
-            animation-play-state: paused;
-        }
-
-        .logo-group {
-            display: flex;
-            padding-right: 2rem;
-        }
-
-        .logo-item {
-            flex: 0 0 auto;
-            padding: 1rem 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-width: 150px;
-            position: relative;
-        }
-
-        .logo-item::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%) scaleX(0);
-            width: 50px;
-            height: 2px;
-            background: var(--emerald);
-            transition: transform 0.3s ease;
-        }
-
-        .logo-item:hover::after {
-            transform: translateX(-50%) scaleX(1);
-        }
-
-        .logo-item img {
-            max-height: 40px;
-            width: auto;
-            object-fit: contain;
-            filter: grayscale(100%) opacity(0.6);
-            transition: var(--transition);
-        }
-
-        .logo-item:hover img {
-            filter: grayscale(0%) opacity(1);
-            transform: scale(1.1);
-        }
-
-        @keyframes infiniteScroll {
-            from {
-                transform: translateX(0);
-            }
-            to {
-                transform: translateX(-50%);
-            }
-        }
-
-        /* Why Choose Us */
-        .features {
-            padding: 4rem 0;
-            background: var(--white);
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 3rem;
-            margin-top: 3rem;
-        }
-
-        .feature-card {
-            text-align: center;
-            padding: 1.5rem;
-            transition: var(--transition);
-            position: relative;
-        }
-
-        .feature-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 0;
-            height: 2px;
-            background: var(--emerald);
-            transition: width 0.3s ease;
-        }
-
-        .feature-card:hover::before {
-            width: 50px;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .feature-icon {
-            width: 56px;
-            height: 56px;
-            margin: 0 auto 1.5rem;
-            background: var(--light-gray);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: var(--transition);
-            position: relative;
-        }
-
-        .feature-card:hover .feature-icon {
-            background: var(--emerald);
-            color: var(--white);
-            animation: iconPulse 0.6s ease;
-        }
-
-        @keyframes iconPulse {
-            0%, 100% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.1);
-            }
-        }
-
-        .feature-icon svg {
-            width: 24px;
-            height: 24px;
-            stroke: var(--emerald);
-            transition: var(--transition);
-        }
-
-        .feature-card:hover .feature-icon svg {
-            stroke: var(--white);
-        }
-
-        .feature-card h3 {
-            margin-bottom: 0.75rem;
-            color: var(--black);
-        }
-
-        .feature-card p {
-            font-size: 0.9375rem;
-            line-height: 1.6;
-        }
-
-        /* FAQ Section */
-        .faq {
-            padding: 4rem 0;
-            background: var(--light-gray);
-        }
-
-        .faq-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
-
-        .faq h2 {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        .faq-item {
-            background: var(--white);
-            border-radius: 12px;
-            margin-bottom: 1rem;
-            overflow: hidden;
-            border: 1px solid var(--border);
-            transition: all 0.3s ease;
-        }
-
-        .faq-item:hover {
-            box-shadow: var(--shadow-md);
-        }
-
-        .faq-item.active {
-            border-color: var(--emerald);
-        }
-
-        .faq-question {
-            padding: 1.5rem;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-weight: 600;
-            color: var(--black);
-            transition: all 0.3s ease;
-        }
-
-        .faq-question:hover {
-            color: var(--emerald);
-        }
-
-        .faq-icon {
-            width: 24px;
-            height: 24px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: transform 0.3s ease;
-        }
-
-        .faq-icon svg {
-            width: 20px;
-            height: 20px;
-            stroke: currentColor;
-            stroke-width: 2;
-        }
-
-        .faq-item.active .faq-icon {
-            transform: rotate(180deg);
-        }
-
-        .faq-answer {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .faq-item.active .faq-answer {
-            max-height: 500px;
-        }
-
-        .faq-answer-content {
-            padding: 0 1.5rem 1.5rem;
-            color: var(--gray);
-            line-height: 1.8;
-        }
-
-        /* Social Connect */
-        .social-connect {
-            padding: 4rem 0;
-            background: linear-gradient(to bottom, var(--white), var(--light-gray));
-        }
-
-        .social-content {
-            text-align: center;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .social-content h2 {
-            margin-bottom: 1rem;
-        }
-
-        .social-content p {
-            margin-bottom: 2rem;
-            font-size: 1.125rem;
-        }
-
-        .social-buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .social-btn {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            padding: 0.75rem 1.5rem;
-            background: var(--white);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            text-decoration: none;
-            color: var(--black);
-            font-weight: 500;
-            transition: var(--transition);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .social-btn::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(16, 185, 129, 0.1), transparent);
-            transition: left 0.5s;
-        }
-
-        .social-btn:hover::before {
-            left: 100%;
-        }
-
-        .social-btn:hover {
-            border-color: var(--emerald);
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-md);
-        }
-
-        .social-btn svg {
-            width: 20px;
-            height: 20px;
-        }
-
-        .social-btn.whatsapp:hover {
-            background: #25d366;
-            color: var(--white);
-            border-color: #25d366;
-        }
-
-        .social-btn.instagram:hover {
-            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-            color: var(--white);
-            border-color: transparent;
-        }
-
-        .social-btn.telegram:hover {
-            background: #0088cc;
-            color: var(--white);
-            border-color: #0088cc;
-        }
-
-        /* Footer */
-        footer {
-            padding: 3rem 0 1rem;
-            background: var(--white);
-            border-top: 1px solid var(--border);
-        }
-
-        .footer-top {
-            padding: 0 1.5rem 2rem;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .countries-served {
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-
-        .countries-served h3 {
-            font-size: 1rem;
-            margin-bottom: 1rem;
-            color: var(--emerald);
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-        }
-
-        .countries-carousel {
-            overflow: hidden;
-            position: relative;
-            padding: 0.5rem 0;
-        }
-
-        .countries-track {
-            display: flex;
-            animation: countriesScroll 60s linear infinite;
-            width: fit-content;
-        }
-
-        .country-item {
-            padding: 0 1.5rem;
-            white-space: nowrap;
-            color: var(--gray);
-            font-size: 0.875rem;
-            position: relative;
-        }
-
-        .country-item::after {
-            content: '•';
-            position: absolute;
-            right: 0;
-            color: var(--emerald);
-            opacity: 0.5;
-        }
-
-        @keyframes countriesScroll {
-            from {
-                transform: translateX(0);
-            }
-            to {
-                transform: translateX(-50%);
-            }
-        }
-
-        .payment-methods {
-            text-align: center;
-            margin-top: 2rem;
-        }
-
-        .payment-methods h3 {
-            font-size: 1rem;
-            margin-bottom: 1rem;
-            color: var(--emerald);
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-        }
-
-        .crypto-icons {
-            display: flex;
-            gap: 1.5rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            align-items: center;
-        }
-
-        .crypto-icon {
-            width: 50px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: var(--light-gray);
-            border-radius: 8px;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            position: relative;
-            padding: 8px;
-        }
-
-        .crypto-icon:hover {
-            background: var(--emerald-light);
-            transform: translateY(-3px);
-            box-shadow: var(--shadow-md);
-        }
-
-        .crypto-icon img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
-
-        .crypto-tooltip {
-            position: absolute;
-            bottom: 100%;
-            left: 50%;
-            transform: translateX(-50%);
-            background: var(--black);
-            color: var(--white);
-            padding: 0.25rem 0.5rem;
-            border-radius: 4px;
-            font-size: 0.75rem;
-            white-space: nowrap;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease;
-            margin-bottom: 0.5rem;
-        }
-
-        .crypto-icon:hover .crypto-tooltip {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 1rem;
-            padding: 2rem 1.5rem 1rem;
-            max-width: var(--max-width);
-            margin: 0 auto;
-        }
-
-        .footer-left {
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-        }
-
-        .footer-logo {
-            height: 52px;
-            width: auto;
-        }
-
-        .footer-links {
-            display: flex;
-            gap: 1.5rem;
-            list-style: none;
-        }
-
-        .footer-links a {
-            color: var(--gray);
-            text-decoration: none;
-            font-size: 0.875rem;
-            transition: var(--transition);
-        }
-
-        .footer-links a:hover {
-            color: var(--emerald);
-        }
-
-        .footer-right {
-            font-size: 0.875rem;
-            color: var(--gray);
-        }
-
-        .footer-right span {
-            color: #ef4444;
-            animation: heartbeat 1.5s ease infinite;
-        }
-
-        @keyframes heartbeat {
-            0%, 100% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.2);
-            }
-        }
-
-        /* Mobile Responsive */
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-
-            .mobile-menu {
-                display: block;
-            }
-
-            .hero {
-                padding: 6rem 0 3rem;
-                min-height: 60vh;
-            }
-
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .hero-subtitle {
-                font-size: 1.125rem;
-            }
-
-            .exams-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .exam-list {
-                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-            }
-
-            /* Mobile exam details fix */
-            .exam-list > .exam-tag:nth-last-child(-n+3) .exam-details {
-                top: auto;
-                bottom: 100%;
-                margin-top: 0;
-                margin-bottom: 8px;
-            }
-
-            .features-grid {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-
-            .social-buttons {
-                flex-direction: column;
-            }
-
-            .social-btn {
-                width: 100%;
-                justify-content: center;
-            }
-
-            .footer-content {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .footer-left {
-                flex-direction: column;
-            }
-
-            .footer-links {
-                justify-content: center;
-            }
-
-            .crypto-icons {
-                gap: 1rem;
-            }
-
-            .crypto-icon {
-                width: 45px;
-                height: 45px;
-            }
-        }
-
-        /* Mobile Menu Overlay */
-        .mobile-nav {
-            display: none;
-            position: fixed;
-            top: 72px;
-            left: 0;
-            right: 0;
-            background: var(--white);
-            border-bottom: 1px solid var(--border);
-            padding: 1rem;
-            z-index: 999;
-            animation: slideDown 0.3s ease;
-        }
-
-        .mobile-nav.active {
-            display: block;
-        }
-
-        .mobile-nav-links {
-            list-style: none;
-        }
-
-        .mobile-nav-links li {
-            padding: 0.75rem 0;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .mobile-nav-links li:last-child {
-            border-bottom: none;
-        }
-
-        .mobile-nav-links a {
-            color: var(--black);
-            text-decoration: none;
-            font-weight: 500;
-            display: block;
-        }
-
-        @keyframes slideDown {
-            from {
-                opacity: 0;
-                transform: translateY(-10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Accessibility */
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border-width: 0;
-        }
-
-        /* Focus styles */
-        a:focus-visible,
-        button:focus-visible {
-            outline: 2px solid var(--emerald);
-            outline-offset: 2px;
-        }
-
-        /* Smooth reveal animation */
-        .reveal-on-scroll {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .reveal-on-scroll.revealed {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    /* Utility Classes */
+    .container {
+      width: 100%;
+      max-width: var(--container);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+    
+    .section {
+      padding: 5rem 0;
+      position: relative;
+    }
+    
+    @media (max-width: 768px) {
+      .section {
+        padding: 3rem 0;
+      }
+    }
+    
+    /* Navigation Header */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--gray-200);
+      transition: var(--transition);
+    }
+    
+    .header.scrolled {
+      background: rgba(255, 255, 255, 0.98);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 0;
+      height: 72px;
+    }
+    
+    .nav-brand {
+      display: flex;
+      align-items: center;
+    }
+    
+    .nav-logo {
+      height: 48px;
+      width: auto;
+      object-fit: contain;
+    }
+    
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+      list-style: none;
+    }
+    
+    .nav-link {
+      color: var(--gray-700);
+      font-weight: 500;
+      position: relative;
+      padding: 0.5rem 0;
+      font-size: 0.95rem;
+      transition: color 0.3s ease;
+    }
+    
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--green);
+      transition: width 0.3s ease;
+    }
+    
+    .nav-link:hover {
+      color: var(--green);
+    }
+    
+    .nav-link:hover::after {
+      width: 100%;
+    }
+    
+    .nav-cta {
+      background: var(--green);
+      color: var(--white);
+      padding: 0.625rem 1.5rem;
+      border-radius: var(--radius-md);
+      font-weight: 600;
+      box-shadow: var(--shadow-md);
+      transition: var(--transition);
+    }
+    
+    .nav-cta:hover {
+      background: var(--green-dark);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    /* Mobile Navigation */
+    .nav-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 4px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+    }
+    
+    .nav-toggle span {
+      width: 24px;
+      height: 2px;
+      background: var(--gray-700);
+      transition: var(--transition);
+    }
+    
+    @media (max-width: 768px) {
+      .nav-toggle {
+        display: flex;
+      }
+      
+      .nav-menu {
+        position: fixed;
+        top: 72px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 72px);
+        background: var(--white);
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 2rem;
+        transition: left 0.3s ease;
+        box-shadow: var(--shadow-xl);
+      }
+      
+      .nav-menu.active {
+        left: 0;
+      }
+      
+      .nav-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      
+      .nav-toggle.active span:nth-child(2) {
+        opacity: 0;
+      }
+      
+      .nav-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+      }
+    }
+    
+    /* Hero Section - Enhanced with more padding */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 120px 0 80px 0; /* Increased padding significantly */
+      position: relative;
+      background: linear-gradient(135deg, var(--green-soft) 0%, var(--white) 25%, var(--white) 75%, var(--red-soft) 100%);
+      overflow: hidden;
+    }
+    
+    @media (max-width: 768px) {
+      .hero {
+        padding: 100px 0 60px 0; /* Adjusted for mobile */
+      }
+    }
+    
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -50%;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle, rgba(0, 106, 78, 0.08) 0%, transparent 70%);
+      animation: float 15s ease-in-out infinite;
+    }
+    
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -50%;
+      left: -50%;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle, rgba(244, 42, 65, 0.08) 0%, transparent 70%);
+      animation: float 15s ease-in-out infinite reverse;
+    }
+    
+    @keyframes float {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      50% { transform: translate(30px, -30px) scale(1.1); }
+    }
+    
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      padding: 2rem 0;
+    }
+    
+    @media (max-width: 968px) {
+      .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 3rem;
+      }
+    }
+    
+    .hero-text {
+      animation: fadeInUp 0.8s ease;
+    }
+    
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      margin-bottom: 1.5rem;
+      font-size: 0.875rem;
+      color: var(--gray-600);
+      box-shadow: var(--shadow-sm);
+    }
+    
+    .hero-badge-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--green);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+      0%, 100% { 
+        opacity: 1;
+        transform: scale(1);
+      }
+      50% { 
+        opacity: 0.6;
+        transform: scale(1.2);
+      }
+    }
+    
+    .hero-title {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 800;
+      margin-bottom: 1.5rem;
+      line-height: 1.1;
+    }
+    
+    .hero-title-gradient {
+      background: linear-gradient(135deg, var(--green) 0%, var(--green-light) 50%, var(--red) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .hero-description {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+      color: var(--gray-600);
+      max-width: 600px;
+    }
+    
+    @media (max-width: 968px) {
+      .hero-description {
+        margin: 0 auto 2rem;
+      }
+    }
+    
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+    
+    @media (max-width: 968px) {
+      .hero-buttons {
+        justify-content: center;
+      }
+    }
+    
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1rem 2rem;
+      border-radius: var(--radius-md);
+      font-weight: 600;
+      transition: var(--transition);
+      cursor: pointer;
+      border: none;
+      font-size: 1rem;
+      box-shadow: var(--shadow-md);
+    }
+    
+    .btn-primary {
+      background: var(--green);
+      color: var(--white);
+    }
+    
+    .btn-primary:hover {
+      background: var(--green-dark);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .btn-secondary {
+      background: var(--white);
+      color: var(--green);
+      border: 2px solid var(--green);
+    }
+    
+    .btn-secondary:hover {
+      background: var(--green-soft);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .hero-visual {
+      animation: fadeInUp 0.8s ease 0.2s both;
+    }
+    
+    .hero-stats-card {
+      background: var(--white);
+      border-radius: var(--radius-2xl);
+      padding: 2.5rem;
+      box-shadow: var(--shadow-2xl);
+      border: 1px solid var(--gray-100);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .hero-stats-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--green), var(--red));
+    }
+    
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .hero-stat {
+      text-align: center;
+    }
+    
+    .hero-stat-number {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--green);
+      line-height: 1;
+      margin-bottom: 0.25rem;
+    }
+    
+    .hero-stat-label {
+      font-size: 0.875rem;
+      color: var(--gray-500);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    
+    .hero-exams {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--gray-200);
+    }
+    
+    .hero-exam-badge {
+      padding: 0.5rem 1rem;
+      background: var(--gray-50);
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius-md);
+      font-weight: 600;
+      font-size: 0.875rem;
+      color: var(--gray-700);
+      transition: var(--transition);
+    }
+    
+    .hero-exam-badge:hover {
+      background: var(--green-soft);
+      border-color: var(--green);
+      color: var(--green);
+      transform: translateY(-2px);
+    }
+    
+    .hero-trust {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 3rem;
+      padding: 1rem;
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+    }
+    
+    @media (max-width: 968px) {
+      .hero-trust {
+        justify-content: center;
+      }
+    }
+    
+    .hero-trust-avatars {
+      display: flex;
+      margin-left: 0.5rem;
+    }
+    
+    .hero-trust-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--green-soft);
+      border: 3px solid var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 0.875rem;
+      color: var(--green);
+      margin-left: -0.75rem;
+    }
+    
+    .hero-trust-avatar:first-child {
+      margin-left: 0;
+    }
+    
+    .hero-trust-text {
+      flex: 1;
+    }
+    
+    .hero-trust-text strong {
+      color: var(--gray-900);
+      display: block;
+      font-size: 0.95rem;
+    }
+    
+    .hero-trust-text span {
+      color: var(--gray-500);
+      font-size: 0.875rem;
+    }
+    
+    /* Floating Consultation Button */
+    .floating-consultation {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 999;
+      animation: slideUp 0.5s ease;
+    }
+    
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .floating-consultation.hidden {
+      opacity: 0;
+      transform: translateY(100px);
+      pointer-events: none;
+    }
+    
+    .consultation-trigger {
+      background: var(--green);
+      color: var(--white);
+      padding: 1rem 1.5rem;
+      border-radius: 999px;
+      box-shadow: var(--shadow-xl);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+      border: none;
+      font-size: 1rem;
+    }
+    
+    .consultation-trigger:hover {
+      background: var(--green-dark);
+      transform: scale(1.05);
+      box-shadow: var(--shadow-2xl);
+    }
+    
+    .consultation-trigger svg {
+      width: 20px;
+      height: 20px;
+      animation: ring 2s ease-in-out infinite;
+    }
+    
+    @keyframes ring {
+      0%, 100% { transform: rotate(0deg); }
+      10%, 30% { transform: rotate(-25deg); }
+      20%, 40% { transform: rotate(25deg); }
+    }
+    
+    .consultation-options {
+      position: absolute;
+      bottom: 100%;
+      right: 0;
+      margin-bottom: 1rem;
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-2xl);
+      padding: 0.5rem;
+      min-width: 200px;
+      opacity: 0;
+      transform: translateY(10px);
+      pointer-events: none;
+      transition: var(--transition);
+    }
+    
+    .consultation-options.show {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: all;
+    }
+    
+    .consultation-option {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.75rem 1rem;
+      border-radius: var(--radius-md);
+      color: var(--gray-700);
+      transition: var(--transition);
+      text-decoration: none;
+    }
+    
+    .consultation-option:hover {
+      background: var(--gray-50);
+    }
+    
+    .consultation-option svg {
+      width: 24px;
+      height: 24px;
+    }
+    
+    /* Features Section */
+    .features {
+      background: var(--gray-50);
+    }
+    
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    
+    .feature-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      transition: var(--transition);
+      border: 1px solid var(--gray-200);
+    }
+    
+    .feature-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-xl);
+      border-color: var(--green);
+    }
+    
+    .feature-icon {
+      width: 56px;
+      height: 56px;
+      background: var(--green-soft);
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+    }
+    
+    .feature-title {
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+      color: var(--gray-900);
+    }
+    
+    .feature-description {
+      color: var(--gray-600);
+      line-height: 1.6;
+    }
+    
+    /* Exams Section */
+    .exams-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    
+    .exam-card {
+      background: var(--white);
+      border: 2px solid var(--gray-200);
+      border-radius: var(--radius-lg);
+      padding: 2rem 1.5rem;
+      text-align: center;
+      transition: var(--transition);
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .exam-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-xl);
+      border-color: var(--green);
+    }
+    
+    .exam-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--green), var(--green-light));
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+    
+    .exam-card:hover::before {
+      transform: scaleX(1);
+    }
+    
+    .exam-logo-img {
+      height: 60px;
+      width: auto;
+      margin: 0 auto 1.5rem;
+      object-fit: contain;
+    }
+    
+    .exam-name {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: var(--gray-900);
+    }
+    
+    .exam-info {
+      font-size: 0.875rem;
+      color: var(--gray-600);
+      line-height: 1.5;
+    }
+    
+    /* Journey Section - Enhanced */
+    .journey {
+      background: linear-gradient(180deg, var(--white) 0%, var(--green-soft) 100%);
+      padding: 6rem 0;
+    }
+    
+    .journey-timeline {
+      position: relative;
+      max-width: 1000px;
+      margin: 4rem auto;
+    }
+    
+    .journey-path {
+      position: absolute;
+      top: 40px;
+      left: 10%;
+      right: 10%;
+      height: 2px;
+      background: linear-gradient(90deg, var(--green) 0%, var(--green-light) 50%, var(--red) 100%);
+      z-index: 1;
+    }
+    
+    @media (max-width: 768px) {
+      .journey-path {
+        display: none;
+      }
+    }
+    
+    .journey-steps {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 2rem;
+      position: relative;
+      z-index: 2;
+    }
+    
+    @media (max-width: 968px) {
+      .journey-steps {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    
+    @media (max-width: 640px) {
+      .journey-steps {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    .journey-step {
+      text-align: center;
+      position: relative;
+    }
+    
+    .journey-step-icon {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 1.5rem;
+      background: var(--white);
+      border: 3px solid var(--green);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      position: relative;
+      transition: var(--transition);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .journey-step:hover .journey-step-icon {
+      transform: scale(1.1);
+      background: var(--green);
+      color: var(--white);
+    }
+    
+    .journey-step-number {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      width: 32px;
+      height: 32px;
+      background: var(--red);
+      color: var(--white);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.875rem;
+      box-shadow: var(--shadow-md);
+    }
+    
+    .journey-step-title {
+      font-size: 1.125rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: var(--gray-900);
+    }
+    
+    .journey-step-description {
+      font-size: 0.875rem;
+      color: var(--gray-600);
+      line-height: 1.5;
+    }
+    
+    /* Testimonials Section - Fixed shadows */
+    .testimonials {
+      background: var(--white);
+      position: relative;
+      overflow: visible; /* Changed from hidden to visible */
+      padding-bottom: 6rem; /* Added extra padding for shadow */
+    }
+    
+    .testimonials::before {
+      content: '"';
+      position: absolute;
+      top: -50px;
+      left: 50px;
+      font-size: 200px;
+      color: var(--green-soft);
+      font-family: serif;
+      line-height: 1;
+    }
+    
+    .testimonials-slider {
+      position: relative;
+      overflow: hidden;
+      margin-top: 3rem;
+      padding: 1rem 0 2rem; /* Added padding for shadows */
+    }
+    
+    .testimonials-track {
+      display: flex;
+      gap: 2rem;
+      animation: scroll 40s linear infinite;
+      padding: 1rem 0; /* Added padding for shadows */
+    }
+    
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    
+    .testimonial-card {
+      min-width: 400px;
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius-xl);
+      padding: 2rem;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); /* Adjusted shadow */
+    }
+    
+    .testimonial-content {
+      margin-bottom: 1.5rem;
+      font-size: 1.125rem;
+      color: var(--gray-700);
+      line-height: 1.6;
+    }
+    
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    
+    .testimonial-avatar {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: var(--green-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: var(--green);
+      font-size: 1.125rem;
+    }
+    
+    .testimonial-info {
+      flex: 1;
+    }
+    
+    .testimonial-name {
+      font-weight: 700;
+      color: var(--gray-900);
+      margin-bottom: 0.25rem;
+    }
+    
+    .testimonial-role {
+      font-size: 0.875rem;
+      color: var(--gray-500);
+    }
+    
+    .testimonial-rating {
+      color: var(--yellow);
+      font-size: 1.125rem;
+    }
+    
+    /* Flags Section - New */
+    .flags-section {
+      background: var(--gray-50);
+      padding: 3rem 0;
+      overflow: hidden;
+    }
+    
+    .flags-title {
+      text-align: center;
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      color: var(--gray-900);
+    }
+    
+    .flags-slider {
+      position: relative;
+    }
+    
+    .flags-track {
+      display: flex;
+      gap: 3rem;
+      animation: flagScroll 30s linear infinite;
+      align-items: center;
+    }
+    
+    @keyframes flagScroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    
+    .flag-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      white-space: nowrap;
+      padding: 0.75rem 1.25rem;
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--gray-200);
+      transition: var(--transition);
+    }
+    
+    .flag-item:hover {
+      transform: scale(1.05);
+      box-shadow: var(--shadow-md);
+      border-color: var(--green);
+    }
+    
+    .flag-icon {
+      font-size: 2rem;
+    }
+    
+    .flag-name {
+      font-weight: 600;
+      color: var(--gray-800);
+    }
+    
+    /* FAQ Section */
+    .faq {
+      background: var(--gray-50);
+    }
+    
+    .faq-container {
+      max-width: 800px;
+      margin: 3rem auto 0;
+    }
+    
+    .faq-item {
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius-lg);
+      margin-bottom: 1rem;
+      overflow: hidden;
+      transition: var(--transition);
+    }
+    
+    .faq-item:hover {
+      box-shadow: var(--shadow-md);
+    }
+    
+    .faq-question {
+      width: 100%;
+      padding: 1.5rem;
+      background: none;
+      border: none;
+      color: var(--gray-900);
+      font-size: 1.125rem;
+      font-weight: 600;
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: var(--transition);
+    }
+    
+    .faq-question:hover {
+      background: var(--gray-50);
+    }
+    
+    .faq-question::after {
+      content: '+';
+      font-size: 1.5rem;
+      color: var(--green);
+      transition: transform 0.3s ease;
+    }
+    
+    .faq-item.active .faq-question::after {
+      transform: rotate(45deg);
+    }
+    
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+    
+    .faq-item.active .faq-answer {
+      max-height: 500px;
+    }
+    
+    .faq-answer-content {
+      padding: 0 1.5rem 1.5rem;
+      color: var(--gray-600);
+      line-height: 1.6;
+    }
+    
+    /* Contact Section */
+    .contact {
+      background: var(--white);
+    }
+    
+    .contact-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    
+    .contact-card {
+      background: var(--white);
+      border: 2px solid var(--gray-200);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      text-align: center;
+      transition: var(--transition);
+    }
+    
+    .contact-card:hover {
+      border-color: var(--green);
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-4px);
+    }
+    
+    .contact-icon {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 1.5rem;
+      background: var(--green-soft);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+    }
+    
+    .contact-title {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      color: var(--gray-900);
+    }
+    
+    .contact-info {
+      color: var(--gray-600);
+      line-height: 1.6;
+    }
+    
+    .contact-info a {
+      color: var(--green);
+      font-weight: 600;
+    }
+    
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+    
+    /* Footer - White background */
+    .footer {
+      background: var(--gray-50);
+      border-top: 1px solid var(--gray-200);
+      padding: 3rem 0 2rem;
+    }
+    
+    .footer-content {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 2rem;
+    }
+    
+    @media (max-width: 768px) {
+      .footer-content {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    .footer-brand {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    
+    .footer-logo {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-md);
+      object-fit: contain;
+      background: var(--white);
+      padding: 4px;
+      border: 1px solid var(--gray-200);
+    }
+    
+    .footer-brand-text h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      color: var(--gray-900);
+    }
+    
+    .footer-brand-text p {
+      font-size: 0.875rem;
+      color: var(--gray-600);
+      line-height: 1.6;
+    }
+    
+    .footer-column h4 {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      color: var(--gray-900);
+    }
+    
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    
+    .footer-link {
+      color: var(--gray-600);
+      font-size: 0.875rem;
+      transition: var(--transition);
+    }
+    
+    .footer-link:hover {
+      color: var(--green);
+      transform: translateX(4px);
+    }
+    
+    .footer-social {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    
+    .social-link {
+      width: 40px;
+      height: 40px;
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+      color: var(--gray-600);
+    }
+    
+    .social-link:hover {
+      background: var(--green);
+      color: var(--white);
+      transform: translateY(-4px);
+      border-color: var(--green);
+    }
+    
+    .footer-bottom {
+      padding-top: 2rem;
+      border-top: 1px solid var(--gray-200);
+      text-align: center;
+      color: var(--gray-600);
+      font-size: 0.875rem;
+    }
+    
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .fade-in-up {
+      animation: fadeInUp 0.6s ease both;
+    }
+    
+    /* Section Headers */
+    .section-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    
+    .section-title {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin-bottom: 1rem;
+      color: var(--gray-900);
+    }
+    
+    .section-subtitle {
+      font-size: 1.125rem;
+      color: var(--gray-600);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  </style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <nav class="container">
-            <a href="#" class="logo" aria-label="All Exam Support Home">
-                <img src="https://i.postimg.cc/8CY7pQdg/Clean-Shot-2025-08-23-at-18-56-30-2x.png" alt="All Exam Support" class="logo-img">
+  
+  <!-- Header Navigation -->
+  <header class="header" role="banner">
+    <nav class="nav container" role="navigation" aria-label="Main navigation">
+      <a href="#home" class="nav-brand">
+        <img src="https://i.imgur.com/vt66Lb1.png" alt="ExamHelpBD" class="nav-logo">
+      </a>
+      
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#exams" class="nav-link">Exams</a></li>
+        <li><a href="#journey" class="nav-link">Process</a></li>
+        <li><a href="#testimonials" class="nav-link">Success Stories</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+  
+  <!-- Floating Consultation Button -->
+  <div class="floating-consultation" id="floatingConsultation">
+    <div class="consultation-options" id="consultationOptions">
+      <a href="https://wa.me/447878922011" class="consultation-option" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="#25D366">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.149-.67.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+          <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm5.5 14.405c-.235.658-.734 1.179-1.337 1.384-.199.068-.41.103-.634.103-.456 0-.962-.157-1.518-.472a13.266 13.266 0 01-2.589-1.695 13.028 13.028 0 01-2.424-2.676c-.858-1.21-1.44-2.505-1.44-3.816 0-.812.207-1.578.614-2.286.402-.704.975-1.256 1.659-1.605a4.64 4.64 0 011.713-.337c.128 0 .257.01.383.029.348.053.743.235 1.061.993.138.329.351.967.566 1.623.217.663.436 1.341.484 1.533.066.258.105.497.005.794-.101.299-.222.477-.384.696-.066.09-.138.185-.215.285-.099.129-.195.252-.276.361-.181.243-.316.422-.316.65 0 .163.062.322.173.482.31.444.921 1.292 1.666 2.085.93.991 1.717 1.299 1.995 1.433.124.06.203.093.258.093.115 0 .235-.078.341-.254.123-.205.471-.855.604-1.091.131-.235.243-.316.392-.316.076 0 .16.024.249.071.316.169 2.013 1.018 2.013 1.018s.178.093.265.145c.106.064.164.099.225.145.283.208.428.398.332.662z"/>
+        </svg>
+        <span>WhatsApp</span>
+      </a>
+      <a href="https://t.me/examhelp_BD" class="consultation-option" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="#0088cc">
+          <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"/>
+        </svg>
+        <span>Telegram</span>
+      </a>
+    </div>
+    <button class="consultation-trigger" id="consultationTrigger">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+      </svg>
+      Speak to a Consultant
+    </button>
+  </div>
+  
+  <main>
+    <!-- Hero Section - Enhanced with more padding -->
+    <section id="home" class="hero section">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            <span>Trusted Since 2012 • 1200+ Success Stories</span>
+          </div>
+          
+          <h1 class="hero-title">
+            Your Gateway to<br>
+            <span class="hero-title-gradient">Global Education</span>
+          </h1>
+          
+          <p class="hero-description">
+            Master SAT, GRE, GMAT, IELTS, TOEFL & LSAT with Bangladesh's most trusted test help consultancy. 
+            Expert exam help, proven strategies, and complete admission support.
+          </p>
+          
+          <div class="hero-buttons">
+            <a href="https://wa.me/447878922011" class="btn btn-primary" target="_blank" rel="noopener">
+              Start Your Journey
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
             </a>
+            <a href="#exams" class="btn btn-secondary">
+              Explore Programs
+            </a>
+          </div>
+          
+          <div class="hero-trust">
+            <div class="hero-trust-avatars">
+              <div class="hero-trust-avatar">RH</div>
+              <div class="hero-trust-avatar">SA</div>
+              <div class="hero-trust-avatar">AK</div>
+              <div class="hero-trust-avatar">+</div>
+            </div>
+            <div class="hero-trust-text">
+              <strong>Join 1200+ successful students</strong>
+              <span>95% achieved their target scores</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="hero-visual">
+          <div class="hero-stats-card">
+            <div class="hero-stats">
+              <div class="hero-stat">
+                <div class="hero-stat-number">1240+</div>
+                <div class="hero-stat-label">Students</div>
+              </div>
+              <div class="hero-stat">
+                <div class="hero-stat-number">99%</div>
+                <div class="hero-stat-label">Success</div>
+              </div>
+              <div class="hero-stat">
+                <div class="hero-stat-number">50+</div>
+                <div class="hero-stat-label">Universities</div>
+              </div>
+            </div>
             
-            <ul class="nav-links">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#exams">Exams</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-
-            <button class="mobile-menu" aria-label="Toggle menu" onclick="toggleMobileMenu()">
-                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
-        </nav>
-
-        <!-- Mobile Navigation -->
-        <div class="mobile-nav" id="mobileNav">
-            <ul class="mobile-nav-links">
-                <li><a href="#home" onclick="toggleMobileMenu()">Home</a></li>
-                <li><a href="#exams" onclick="toggleMobileMenu()">Exams</a></li>
-                <li><a href="#about" onclick="toggleMobileMenu()">About</a></li>
-                <li><a href="#faq" onclick="toggleMobileMenu()">FAQ</a></li>
-                <li><a href="#contact" onclick="toggleMobileMenu()">Contact</a></li>
-            </ul>
-        </div>
-    </header>
-
-    <!-- Hero Section with Premium Animations -->
-    <section class="hero" id="home">
-        <div class="particles" id="particles"></div>
-        <div class="container">
-            <div class="hero-content">
-                <h1>
-                    <span class="word" style="--delay: 0.1s">Excel</span>
-                    <span class="word" style="--delay: 0.2s">in</span>
-                    <span class="word" style="--delay: 0.3s">Every</span>
-                    <span class="word" style="--delay: 0.4s">Exam.</span>
-                    <br>
-                    <span class="highlight word" style="--delay: 0.5s">Your</span>
-                    <span class="highlight word" style="--delay: 0.6s">Success,</span>
-                    <span class="highlight word" style="--delay: 0.7s">Supported.</span>
-                </h1>
-                <p class="hero-subtitle">Expert remote assistance for standardized tests and professional certifications with personalized guidance.</p>
-                <div class="hero-cta">
-                    <a href="#contact" class="btn-primary">
-                        Book Your Exam!
-                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                        </svg>
-                    </a>
-                </div>
+            <div class="hero-exams">
+              <div class="hero-exam-badge">SAT 1500+</div>
+              <div class="hero-exam-badge">GRE 320+</div>
+              <div class="hero-exam-badge">GMAT 700+</div>
+              <div class="hero-exam-badge">IELTS 8+</div>
+              <div class="hero-exam-badge">TOEFL 110+</div>
+              <div class="hero-exam-badge">LSAT 170+</div>
             </div>
+          </div>
         </div>
+      </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section id="features" class="features section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Why Choose ExamHelpBD?</h2>
+          <p class="section-subtitle">Comprehensive test help tailored for Bangladeshi students</p>
+        </div>
+        
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🎯</div>
+            <h3 class="feature-title">Personalized Approach</h3>
+            <p class="feature-description">Customized appraoch based on your requirements and target scores</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">👨‍🏫</div>
+            <h3 class="feature-title">Expert Solvers</h3>
+            <p class="feature-description">Get help from experts who scored in the 99th percentile with years of experience</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">📊</div>
+            <h3 class="feature-title">Unmatched Performance</h3>
+            <p class="feature-description">With over 500+ exams, we help with every exam possible.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">🌍</div>
+            <h3 class="feature-title">Global Network</h3>
+            <p class="feature-description">Our students have studied at perstigious universities globally.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">💼</div>
+            <h3 class="feature-title">End-to-End Support</h3>
+            <p class="feature-description">From test help to college guidance, we handle every step of your journey</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">🏆</div>
+            <h3 class="feature-title">Proven Success</h3>
+            <p class="feature-description">99% success rate with students in top universities since 2012</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Supported Exams Section - Two Column Layout with Expandable Cards -->
-    <section class="exams" id="exams">
-        <div class="container">
-            <div class="section-header reveal-on-scroll">
-                <h2>Supported Exams</h2>
-                <p>Comprehensive Assistance for major standardized tests and certifications</p>
-            </div>
-
-            <div class="exam-notice reveal-on-scroll">
-                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-                <p><strong>Note:</strong> This list is not exhaustive. We provide customized support for various other exams based on your specific requirements. Contact us for personalized assistance.</p>
-            </div>
-
-            <div class="exams-grid">
-                <div class="exam-column reveal-on-scroll">
-                    <h3>Standardized Tests</h3>
-                    <div class="exam-list">
-                        <div class="exam-tag">
-                            TOEFL
-                            <div class="exam-details">
-                                <h4>TOEFL iBT</h4>
-                                <p>Test of English as a Foreign Language for non-native speakers applying to universities</p>
-                                <p class="duration">Duration: 3 hours</p>
-                            </div>
-                        </div>
-                        <div class="exam-tag">
-                            IELTS
-                            <div class="exam-details">
-                                <h4>IELTS Academic/General</h4>
-                                <p>International English Language Testing System for study, work, or migration</p>
-                                <p class="duration">Duration: 2h 45min</p>
-                            </div>
-                        </div>
-                        <div class="exam-tag">
-                            GRE
-                            <div class="exam-details">
-                                <h4>GRE General Test</h4>
-                                <p>Graduate Record Examination for MS/PhD admissions in USA/Canada</p>
-                                <p class="duration">Duration: 3h 45min</p>
-                            </div>
-                        </div>
-                        <div class="exam-tag">
-                            GMAT
-                            <div class="exam-details">
-                                <h4>GMAT Focus Edition</h4>
-                                <p>Graduate Management Admission Test for MBA and business programs</p>
-                                <p class="duration">Duration: 2h 15min</p>
-                            </div>
-                        </div>
-                        <div class="exam-tag">
-                            SAT
-                            <div class="exam-details">
-                                <h4>SAT Digital</h4>
-                                <p>Scholastic Assessment Test for undergraduate college admissions in USA</p>
-                                <p class="duration">Duration: 2h 14min</p>
-                            </div>
-                        </div>
-                        <div class="exam-tag">
-                            LSAT
-                            <div class="exam-details">
-                                <h4>LSAT</h4>
-                                <p>Law School Admission Test for JD programs in USA, Canada, and other countries</p>
-                                <p class="duration">Duration: 2h 30min</p>
-                            </div>
-                        </div>
-                        <div class="exam-tag">
-                            MCAT
-                            <div class="exam-details">
-                                <h4>MCCQE</h4>
-                                <p>Medical College Admission Test for medical school admissions in Canada</p>
-                                <p class="duration">Duration: 6h</p>
-                            </div>
-                        </div>
-                        <div class="exam-tag">
-                            ACT
-                            <div class="exam-details">
-                                <h4>ACT</h4>
-                                <p>American College Testing exam for undergraduate admissions</p>
-                                <p class="duration">Duration: 2h 55min</p>
-                            </div>
-                        </div>
-                        <div class="exam-tag">
-                            USMLE
-                            <div class="exam-details">
-                                <h4>USMLE Steps</h4>
-                                <p>United States Medical Licensing Examination for practicing medicine in USA</p>
-                                <p class="duration">Duration: 8-9 hours</p>
-                            </div>
-                        </div>
-                        <div class="exam-tag">
-                            PLAB
-                            <div class="exam-details">
-                                <h4>PLAB 1 & 2</h4>
-                                <p>Professional and Linguistic Assessments Board test for UK medical practice</p>
-                                <p class="duration">Duration: 3 hours</p>
-                            </div>
-                        </div>
-                        <div class="exam-tag">
-                            OET
-                            <div class="exam-details">
-                                <h4>OET Medicine/Nursing</h4>
-                                <p>Occupational English Test for healthcare professionals</p>
-                                <p class="duration">Duration: 3 hours</p>
-                            </div>
-                        </div>
-                        <div class="exam-tag">
-                            PTE
-                            <div class="exam-details">
-                                <h4>PTE Academic</h4>
-                                <p>Pearson Test of English for study abroad and immigration</p>
-                                <p class="duration">Duration: 2 hours</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="exam-column reveal-on-scroll">
-                    <h3>Professional Certifications</h3>
-                    <div class="exam-list">
-                        <div class="exam-tag">
-                            PMP
-                            <div class="exam-details">
-                                <h4>PMP Certification</h4>
-                                <p>Project Management Professional by PMI for experienced project managers</p>
-                                <p class="duration">Duration: 230 min</p>
-                            </div>
-                        </div>
-                        <div class="exam-tag">
-                            CompTIA A+
-                            <div class="exam-details">
-                                <h4>CompTIA A+</h4>
-                                <p>Entry-level IT certification covering hardware, software, and troubleshooting</p>
-                                <p class="duration">Duration: 90 min each</p>
-                            </div>
-                        </div>
-                        <div class="exam-tag">
-                            Security+
-                            <div class="exam-details">
-                                <h4>CompTIA Security+</h4>
-                                <p>Cybersecurity fundamentals certification for IT security roles</p>
-                                <p class="duration">Duration: 90 minutes</p>
-                            </div>
-                        </div>
-                        <div class="exam-tag">
-                            Network+
-                            <div class="exam-details">
-                                <h4>CompTIA Network+</h4>
-                                <p>Networking concepts, infrastructure, and network troubleshooting</p>
-                                <p class="duration">Duration: 90 minutes</p>
-                            </div>
-                        </div>
-                        <div class="exam-tag">
-                            CAPM
-                            <div class="exam-details">
-                                <h4>CAPM by PMI</h4>
-                                <p>Certified Associate in Project Management for entry-level PMs</p>
-                                <p class="duration">Duration: 3 hours</p>
-                            </div>
-                        </div>
-                        <div class="exam-tag">
-                            LEED
-                            <div class="exam-details">
-                                <h4>LEED GA/AP</h4>
-                                <p>Leadership in Energy and Environmental Design green building certification</p>
-                                <p class="duration">Duration: 2 hours</p>
-                            </div>
-                        </div>
-                        <div class="exam-tag">
-                            CPC
-                            <div class="exam-details">
-                                <h4>CPC Medical Coding</h4>
-                                <p>Certified Professional Coder for medical billing and coding specialists</p>
-                                <p class="duration">Duration: 4 hours</p>
-                            </div>
-                        </div>
-                        <div class="exam-tag">
-                            Azure
-                            <div class="exam-details">
-                                <h4>Microsoft Azure</h4>
-                                <p>Cloud computing certifications: AZ-900, AZ-104, AZ-305, and more</p>
-                                <p class="duration">Duration: 2-3 hours</p>
-                            </div>
-                        </div>
-                        <div class="exam-tag">
-                            AWS
-                            <div class="exam-details">
-                                <h4>AWS Certifications</h4>
-                                <p>Amazon Web Services cloud practitioner to solutions architect</p>
-                                <p class="duration">Duration: 130-180 min</p>
-                            </div>
-                        </div>
-                        <div class="exam-tag">
-                            CCNA
-                            <div class="exam-details">
-                                <h4>Cisco CCNA</h4>
-                                <p>Cisco Certified Network Associate for network engineers</p>
-                                <p class="duration">Duration: 120 minutes</p>
-                            </div>
-                        </div>
-                        <div class="exam-tag">
-                            CISSP
-                            <div class="exam-details">
-                                <h4>CISSP</h4>
-                                <p>Certified Information Systems Security Professional for senior security roles</p>
-                                <p class="duration">Duration: 4 hours</p>
-                            </div>
-                        </div>
-                        <div class="exam-tag">
-                            Six Sigma
-                            <div class="exam-details">
-                                <h4>Six Sigma Belts</h4>
-                                <p>Process improvement methodology certification (Yellow, Green, Black Belt)</p>
-                                <p class="duration">Duration: 3-4 hours</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Logo Carousel - Full Width -->
-            <div class="logo-carousel reveal-on-scroll">
-                <div class="logo-track">
-                    <!-- First set -->
-                    <div class="logo-group">
-                        <div class="logo-item">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/ETS_GRE_Logo.jpg" alt="GRE Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.amideast.org%2Fsites%2Fdefault%2Ffiles%2FGMAT%2520Logo.JPG&f=1&nofb=1" alt="GMAT Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="https://www.ets.org/content/dam/ets-org/logo/toefl-logo-black.svg" alt="TOEFL Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="https://s3.eu-west-2.amazonaws.com/ielts-web-static/production/IELTS-logos/IELTS-Logo-Trademark.png" alt="IELTS Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogos-world.net%2Fwp-content%2Fuploads%2F2023%2F07%2FSAT-Logo.png&f=1&nofb=1" alt="SAT Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogowik.com%2Fcontent%2Fuploads%2Fimages%2Fpmi-project-management-institute3441.jpg&f=1&nofb=1" alt="PMP Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Comptia-logo.svg" alt="CompTIA Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft Logo">
-                        </div>
-                    </div>
-                    <!-- Duplicate for seamless loop -->
-                    <div class="logo-group">
-                        <div class="logo-item">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/ETS_GRE_Logo.jpg" alt="GRE Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.amideast.org%2Fsites%2Fdefault%2Ffiles%2FGMAT%2520Logo.JPG&f=1&nofb=1" alt="GMAT Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="https://www.ets.org/content/dam/ets-org/logo/toefl-logo-black.svg" alt="TOEFL Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="https://s3.eu-west-2.amazonaws.com/ielts-web-static/production/IELTS-logos/IELTS-Logo-Trademark.png" alt="IELTS Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogos-world.net%2Fwp-content%2Fuploads%2F2023%2F07%2FSAT-Logo.png&f=1&nofb=1" alt="SAT Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogowik.com%2Fcontent%2Fuploads%2Fimages%2Fpmi-project-management-institute3441.jpg&f=1&nofb=1" alt="PMP Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Comptia-logo.svg" alt="CompTIA Logo">
-                        </div>
-                        <div class="logo-item">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft Logo">
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Exams Section -->
+    <section id="exams" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Exam Preparation Programs</h2>
+          <p class="section-subtitle">Master these standardized tests with our expert coaching</p>
         </div>
-    </section>
-
-    <!-- Why Choose Us Section -->
-    <section class="features" id="about">
-        <div class="container">
-            <div class="section-header reveal-on-scroll">
-                <h2>Why Choose All Exam Support</h2>
-                <p>Three reasons we're the right choice for your exam help</p>
-            </div>
-
-            <div class="features-grid">
-                <div class="feature-card reveal-on-scroll">
-                    <div class="feature-icon">
-                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-                        </svg>
-                    </div>
-                    <h3>Verified Solvers</h3>
-                    <p>All our solvers are certified experts with proven track records and years of subject area experience.</p>
-                </div>
-
-                <div class="feature-card reveal-on-scroll">
-                    <div class="feature-icon">
-                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-                        </svg>
-                    </div>
-                    <h3>All Major Exams</h3>
-                    <p>From GMAT to PMP, we cover every major standardized test and professional certification exam.</p>
-                </div>
-
-                <div class="feature-card reveal-on-scroll">
-                    <div class="feature-icon">
-                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                        </svg>
-                    </div>
-                    <h3>Fast, Personalized Support</h3>
-                    <p>Get instant responses and support tailored to your specific needs and timeline.</p>
-                </div>
-            </div>
+        
+        <div class="exams-grid">
+          <div class="exam-card">
+            <img src="https://penn.phmschools.org/wp-content/uploads/sites/32/2025/01/SAT-logo.png" alt="SAT" class="exam-logo-img">
+            <h3 class="exam-name">SAT</h3>
+            <p class="exam-info">Digital SAT help for US undergraduate admissions</p>
+          </div>
+          
+          <div class="exam-card">
+            <img src="https://www.ets.org/etc.clientlibs/ets/clientlibs/clientlib-gre-quiz/resources/gre_logo-v2.png" alt="GRE" class="exam-logo-img">
+            <h3 class="exam-name">GRE</h3>
+            <p class="exam-info">Graduate school entrance exam for MS/PhD programs</p>
+          </div>
+          
+          <div class="exam-card">
+            <img src="https://www.amideast.org/sites/default/files/GMAT%20Logo.JPG" alt="GMAT" class="exam-logo-img">
+            <h3 class="exam-name">GMAT</h3>
+            <p class="exam-info">Business school admission test for MBA programs</p>
+          </div>
+          
+          <div class="exam-card">
+            <img src="https://i.pinimg.com/originals/ec/f8/58/ecf8587a41617ed3d7ed2e6e2ea16f2c.png" alt="IELTS" class="exam-logo-img">
+            <h3 class="exam-name">IELTS</h3>
+            <p class="exam-info">English proficiency test for UK, Australia, Canada</p>
+          </div>
+          
+          <div class="exam-card">
+            <img src="https://www.ets.org/content/dam/ets-org/logo/toefl-logo-black.svg" alt="TOEFL" class="exam-logo-img">
+            <h3 class="exam-name">TOEFL</h3>
+            <p class="exam-info">English language test preferred by US universities</p>
+          </div>
+          
+          <div class="exam-card">
+            <img src="https://us.lawctopus.com/wp-content/uploads/2023/05/TV-Lawyers-Shows.png" alt="LSAT" class="exam-logo-img">
+            <h3 class="exam-name">LSAT</h3>
+            <p class="exam-info">Law school admission test for JD programs worldwide</p>
+          </div>
         </div>
+      </div>
     </section>
-
+    
+    <!-- Journey Section - Enhanced -->
+    <section id="journey" class="journey section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Your Journey to Success</h2>
+          <p class="section-subtitle">A proven 5-step roadmap to achieve your dreams</p>
+        </div>
+        
+        <div class="journey-timeline">
+          <div class="journey-path"></div>
+          <div class="journey-steps">
+            <div class="journey-step">
+              <div class="journey-step-icon">
+                📞
+                <span class="journey-step-number">1</span>
+              </div>
+              <h3 class="journey-step-title">Free Consultation</h3>
+              <p class="journey-step-description">Discuss your goals and get a personalized exam plan</p>
+            </div>
+            
+            <div class="journey-step">
+              <div class="journey-step-icon">
+                📝
+                <span class="journey-step-number">2</span>
+              </div>
+              <h3 class="journey-step-title">Simplified Process</h3>
+              <p class="journey-step-description">Our team explains and provides a quote.</p>
+            </div>
+            
+            <div class="journey-step">
+              <div class="journey-step-icon">
+                📚
+                <span class="journey-step-number">3</span>
+              </div>
+              <h3 class="journey-step-title">Intensive Training</h3>
+              <p class="journey-step-description">Expert guidance with mock simulations, and personalized feedback</p>
+            </div>
+            
+            <div class="journey-step">
+              <div class="journey-step-icon">
+                🎯
+                <span class="journey-step-number">4</span>
+              </div>
+              <h3 class="journey-step-title">Take the Test</h3>
+              <p class="journey-step-description">Ace your exam with confidence and proven strategies</p>
+            </div>
+            
+            <div class="journey-step">
+              <div class="journey-step-icon">
+                🎓
+                <span class="journey-step-number">5</span>
+              </div>
+              <h3 class="journey-step-title">University Admission</h3>
+              <p class="journey-step-description">Complete application support and visa guidance</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Testimonials Section - Fixed shadows -->
+    <section id="testimonials" class="testimonials section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Success Stories</h2>
+          <p class="section-subtitle">Hear from our students who achieved their dreams</p>
+        </div>
+        
+        <div class="testimonials-slider">
+          <div class="testimonials-track">
+            <div class="testimonial-card">
+              <p class="testimonial-content">"ExamHelpBD transformed my GRE scores. Their structured approach helped me score 325+ and get into MIT!"</p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">RH</div>
+                <div class="testimonial-info">
+                  <div class="testimonial-name">Rafiq Hassan</div>
+                  <div class="testimonial-role">MIT, Computer Science</div>
+                </div>
+                <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+            
+            <div class="testimonial-card">
+              <p class="testimonial-content">"The IELTS help was exceptional. I achieved Band 8.5 and got admission to University of Toronto!"</p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">SA</div>
+                <div class="testimonial-info">
+                  <div class="testimonial-name">Sabrina Ahmed</div>
+                  <div class="testimonial-role">U of Toronto, Business</div>
+                </div>
+                <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+            
+            <div class="testimonial-card">
+              <p class="testimonial-content">"Thanks to their SAT exam help, I scored 1520 and received a full scholarship at NYU. Amazing support!"</p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">AK</div>
+                <div class="testimonial-info">
+                  <div class="testimonial-name">Arif Khan</div>
+                  <div class="testimonial-role">NYU, Economics</div>
+                </div>
+                <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+            
+            <!-- Duplicate for seamless scroll -->
+            <div class="testimonial-card">
+              <p class="testimonial-content">"ExamHelpBD transformed my GRE scores. Their structured approach helped me score 325+ and get into MIT!"</p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">RH</div>
+                <div class="testimonial-info">
+                  <div class="testimonial-name">Rafiq Hassan</div>
+                  <div class="testimonial-role">MIT, Computer Science</div>
+                </div>
+                <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+            
+            <div class="testimonial-card">
+              <p class="testimonial-content">"The IELTS help was exceptional. I achieved Band 8.5 and got admission to University of Toronto!"</p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">SA</div>
+                <div class="testimonial-info">
+                  <div class="testimonial-name">Sabrina Ahmed</div>
+                  <div class="testimonial-role">U of Toronto, Business</div>
+                </div>
+                <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
     <!-- FAQ Section -->
-    <section class="faq" id="faq">
+    <section id="faq" class="faq section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">Got questions? We've got answers</p>
+        </div>
+        
         <div class="faq-container">
-            <h2 class="reveal-on-scroll">Frequently Asked Questions</h2>
-            
-            <div class="faq-item reveal-on-scroll">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    <span>How quickly can I get started?</span>
-                    <div class="faq-icon">
-                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </div>
-                </div>
-                <div class="faq-answer">
-                    <div class="faq-answer-content">
-                        You can start immediately! Once you contact us through WhatsApp, Telegram, or Instagram, our team will assess your needs and explain the process. Move forward with booking your exam and acing it on the exam day!
-                    </div>
-                </div>
+          <div class="faq-item">
+            <button class="faq-question">What is the process like?</button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                It is simple. You sit for the exam, and our expert team assists you in real time.
+              </div>
             </div>
-
-            <div class="faq-item reveal-on-scroll">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    <span>What if my exam isn't listed on your website?</span>
-                    <div class="faq-icon">
-                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </div>
-                </div>
-                <div class="faq-answer">
-                    <div class="faq-answer-content">
-                        No worries! The list on our website isn't exhaustive. We provide customized support for virtually any standardized test or professional certification. Simply reach out to us with your specific requirements, and we'll provide personalized support just for you.
-                    </div>
-                </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question">What is the payment procedure?</button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                You pay after you pass. We pride ourselves in our efficiency, hence the guarantee.
+              </div>
             </div>
-
-            <div class="faq-item reveal-on-scroll">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    <span>How do I know this is not a scam?</span>
-                    <div class="faq-icon">
-                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </div>
-                </div>
-                <div class="faq-answer">
-                    <div class="faq-answer-content">
-                        First things first, we offer a "Pass Now, Pay Later" model. Here, we conduct the examination for you first, and you pay after you pass or as discussed. There's no financial burden on you. Just book, pass, be satisfied, and then pay!
-                    </div>
-                </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question">What if I don't achieve my target score?</button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                We offer a score improvement guarantee. If you don't reach your target score, you can retake the exam at no additional cost.
+              </div>
             </div>
-
-            <div class="faq-item reveal-on-scroll">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    <span>What payment methods do you accept?</span>
-                    <div class="faq-icon">
-                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </div>
-                </div>
-                <div class="faq-answer">
-                    <div class="faq-answer-content">
-                        We accept modern cryptocurrency payments including Bitcoin, Ethereum, USDT, USDC, Solana, Litecoin, and Monero. This ensures secure, fast, and private transactions for our global clientele.
-                    </div>
-                </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question">Do you help with university applications?</button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                Absolutely! We provide complete application support including university selection, SOP/essay writing, and visa interview preparation.
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
-
-    <!-- Social Connect Section -->
-    <section class="social-connect" id="contact">
-        <div class="container">
-            <div class="social-content reveal-on-scroll">
-                <h2>Connect Instantly</h2>
-                <p>Choose your preferred platform to start your exam preparation journey today.</p>
-                
-                <div class="social-buttons">
-                    <a href="https://api.whatsapp.com/send?phone=447450517950" class="social-btn whatsapp" target="_blank" rel="noopener noreferrer" onclick="fbq('track', 'Contact', {method: 'WhatsApp'});">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 012.41 5.83c0 4.54-3.7 8.23-8.24 8.23-1.48 0-2.93-.39-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.188 8.188 0 01-1.26-4.38c.01-4.54 3.7-8.23 8.25-8.23M8.53 7.33c-.16 0-.43.06-.66.31-.22.25-.87.86-.87 2.07 0 1.22.89 2.39 1 2.56.14.17 1.76 2.67 4.25 3.73.59.27 1.05.42 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.46-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.16-.48-.27-.25-.14-1.47-.74-1.69-.82-.23-.08-.37-.12-.56.12-.16.25-.64.81-.78.97-.15.17-.29.19-.53.07-.26-.13-1.06-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.12-.24-.01-.39.11-.5.11-.11.27-.29.37-.44.13-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.11-.56-1.35-.77-1.84-.2-.48-.4-.42-.56-.43-.14 0-.3-.01-.47-.01z"/>
-                        </svg>
-                        WhatsApp
-                    </a>
-
-                    <a href="https://instagram.com/allexamsupportglobal" class="social-btn instagram" target="_blank" rel="noopener noreferrer" onclick="fbq('track', 'Contact', {method: 'Instagram'});">
-                        <svg fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.405a1.44 1.44 0 112.881.001 1.44 1.44 0 01-2.881-.001z"/>
-                        </svg>
-                        Instagram
-                    </a>
-
-                    <a href="https://t.me/allexamsupportHQ" class="social-btn telegram" target="_blank" rel="noopener noreferrer" onclick="fbq('track', 'Contact', {method: 'Telegram'});">
-                        <svg fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"/>
-                        </svg>
-                        Telegram
-                    </a>
-                </div>
-            </div>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-subtitle">Ready to start your journey? Contact us today</p>
         </div>
+        
+        <div class="contact-cards">
+          <div class="contact-card">
+            <div class="contact-icon">📍</div>
+            <h3 class="contact-title">Visit Us</h3>
+            <div class="contact-info">
+              B Block, Road No 21<br>
+              Banani, Dhaka<br>
+              Bangladesh - 1213
+            </div>
+          </div>
+          
+          <div class="contact-card">
+            <div class="contact-icon">💬</div>
+            <h3 class="contact-title">Message Us</h3>
+            <div class="contact-info">
+              WhatsApp: <a href="https://wa.me/447878922011" target="_blank">+44 7878 922011</a><br>
+              Telegram: <a href="https://t.me/examhelp_BD" target="_blank">@examhelp_BD</a>
+            </div>
+          </div>
+          
+          <div class="contact-card">
+            <div class="contact-icon">🌐</div>
+            <h3 class="contact-title">Follow Us</h3>
+            <div class="contact-info">
+              Instagram: <a href="https://www.instagram.com/examhelp_BD" target="_blank">@examhelp_BD</a><br>
+              Mon-Sat: 10 AM - 8 PM
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-top">
-            <div class="countries-served">
-                <h3>Serving Students Worldwide</h3>
-                <div class="countries-carousel">
-                    <div class="countries-track" id="countriesTrack">
-                        <!-- Countries will be dynamically added -->
-                    </div>
-                </div>
+    
+    <!-- Flags Section -->
+    <section class="flags-section">
+      <div class="container">
+        <h3 class="flags-title">Study in Top Destinations Worldwide</h3>
+        <div class="flags-slider">
+          <div class="flags-track">
+            <div class="flag-item">
+              <span class="flag-icon">🇺🇸</span>
+              <span class="flag-name">USA</span>
             </div>
-
-            <div class="payment-methods">
-                <h3>We Accept Cryptocurrency</h3>
-                <div class="crypto-icons">
-                    <div class="crypto-icon">
-                        <span class="crypto-tooltip">Bitcoin</span>
-                        <img src="https://www.cryptologos.cc/logos/bitcoin-btc-logo.png?v=040" alt="Bitcoin">
-                    </div>
-                    <div class="crypto-icon">
-                        <span class="crypto-tooltip">Ethereum</span>
-                        <img src="https://www.cryptologos.cc/logos/ethereum-eth-logo.png?v=040" alt="Ethereum">
-                    </div>
-                    <div class="crypto-icon">
-                        <span class="crypto-tooltip">Tether USDT</span>
-                        <img src="https://www.cryptologos.cc/logos/tether-usdt-logo.png?v=040" alt="Tether">
-                    </div>
-                    <div class="crypto-icon">
-                        <span class="crypto-tooltip">Solana</span>
-                        <img src="https://www.cryptologos.cc/logos/solana-sol-logo.png?v=040" alt="Solana">
-                    </div>
-                    <div class="crypto-icon">
-                        <span class="crypto-tooltip">Monero</span>
-                        <img src="https://www.cryptologos.cc/logos/monero-xmr-logo.png?v=040" alt="Monero">
-                    </div>
-                    <div class="crypto-icon">
-                        <span class="crypto-tooltip">USD Coin</span>
-                        <img src="https://www.cryptologos.cc/logos/usd-coin-usdc-logo.png?v=040" alt="USDC">
-                    </div>
-                    <div class="crypto-icon">
-                        <span class="crypto-tooltip">Litecoin</span>
-                        <img src="https://www.cryptologos.cc/logos/litecoin-ltc-logo.png?v=040" alt="Litecoin">
-                    </div>
-                </div>
+            <div class="flag-item">
+              <span class="flag-icon">🇬🇧</span>
+              <span class="flag-name">UK</span>
             </div>
+            <div class="flag-item">
+              <span class="flag-icon">🇨🇦</span>
+              <span class="flag-name">Canada</span>
+            </div>
+            <div class="flag-item">
+              <span class="flag-icon">🇦🇺</span>
+              <span class="flag-name">Australia</span>
+            </div>
+            <div class="flag-item">
+              <span class="flag-icon">🇩🇪</span>
+              <span class="flag-name">Germany</span>
+            </div>
+            <div class="flag-item">
+              <span class="flag-icon">🇫🇷</span>
+              <span class="flag-name">France</span>
+            </div>
+            <div class="flag-item">
+              <span class="flag-icon">🇳🇱</span>
+              <span class="flag-name">Netherlands</span>
+            </div>
+            <div class="flag-item">
+              <span class="flag-icon">🇸🇪</span>
+              <span class="flag-name">Sweden</span>
+            </div>
+            <div class="flag-item">
+              <span class="flag-icon">🇮🇪</span>
+              <span class="flag-name">Ireland</span>
+            </div>
+            <div class="flag-item">
+              <span class="flag-icon">🇸🇬</span>
+              <span class="flag-name">Singapore</span>
+            </div>
+            <div class="flag-item">
+              <span class="flag-icon">🇯🇵</span>
+              <span class="flag-name">Japan</span>
+            </div>
+            <div class="flag-item">
+              <span class="flag-icon">🇰🇷</span>
+              <span class="flag-name">South Korea</span>
+            </div>
+            <!-- Duplicate for seamless scroll -->
+            <div class="flag-item">
+              <span class="flag-icon">🇺🇸</span>
+              <span class="flag-name">USA</span>
+            </div>
+            <div class="flag-item">
+              <span class="flag-icon">🇬🇧</span>
+              <span class="flag-name">UK</span>
+            </div>
+            <div class="flag-item">
+              <span class="flag-icon">🇨🇦</span>
+              <span class="flag-name">Canada</span>
+            </div>
+            <div class="flag-item">
+              <span class="flag-icon">🇦🇺</span>
+              <span class="flag-name">Australia</span>
+            </div>
+            <div class="flag-item">
+              <span class="flag-icon">🇩🇪</span>
+              <span class="flag-name">Germany</span>
+            </div>
+            <div class="flag-item">
+              <span class="flag-icon">🇫🇷</span>
+              <span class="flag-name">France</span>
+            </div>
+          </div>
         </div>
-
-        <div class="footer-content">
-            <div class="footer-left">
-                <img src="https://i.postimg.cc/8CY7pQdg/Clean-Shot-2025-08-23-at-18-56-30-2x.png" alt="All Exam Support" class="footer-logo">
-                <ul class="footer-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#exams">Exams</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer - White background -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="https://i.imgur.com/vt66Lb1.png" alt="ExamHelpBD" class="footer-logo">
+          <div class="footer-brand-text">
+            <h3>ExamHelpBD</h3>
+            <p>Your trusted partner for test preparation and study abroad guidance since 2012.</p>
+            <div class="footer-social">
+              <a href="https://wa.me/447878922011" class="social-link" aria-label="WhatsApp">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.149-.67.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                </svg>
+              </a>
+              <a href="https://t.me/examhelp_BD" class="social-link" aria-label="Telegram">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"/>
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/alex245105" class="social-link" aria-label="Instagram">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z"/>
+                  <circle cx="12" cy="12" r="3.2"/>
+                  <circle cx="18.406" cy="5.594" r="1.44"/>
+                </svg>
+              </a>
             </div>
-            <div class="footer-right">
-                <p>© 2025 All Exam Support. Made with <span>❤️</span> for students worldwide.</p>
-            </div>
+          </div>
         </div>
-    </footer>
-
-    <script>
-        // Countries data
-        const countries = [
-            'United States', 'Canada', 'United Kingdom', 'Australia', 'Germany', 'France', 'India', 'China', 'Japan', 'South Korea',
-            'Brazil', 'Mexico', 'Argentina', 'Spain', 'Italy', 'Netherlands', 'Belgium', 'Switzerland', 'Sweden', 'Norway',
-            'Denmark', 'Finland', 'Russia', 'Poland', 'Turkey', 'Saudi Arabia', 'UAE', 'Singapore', 'Malaysia', 'Thailand',
-            'Indonesia', 'Philippines', 'Vietnam', 'South Africa', 'Egypt', 'Nigeria', 'Kenya', 'Israel', 'New Zealand', 'Ireland'
-        ];
-
-        // Initialize countries carousel
-        function initCountriesCarousel() {
-            const track = document.getElementById('countriesTrack');
-            if (!track) return;
-            
-            // Create two sets for seamless loop
-            const countriesHTML = countries.map(country => 
-                `<span class="country-item">${country}</span>`
-            ).join('');
-            
-            track.innerHTML = countriesHTML + countriesHTML;
+        
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#exams" class="footer-link">Our Programs</a></li>
+            <li><a href="#journey" class="footer-link">How It Works</a></li>
+            <li><a href="#testimonials" class="footer-link">Success Stories</a></li>
+            <li><a href="#contact" class="footer-link">Contact Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="https://wa.me/447878922011" class="footer-link">WhatsApp: +44 7878 922011</a></li>
+            <li><a href="https://t.me/examhelp_BD" class="footer-link">Telegram: @examhelp_BD</a></li>
+            <li><a href="#" class="footer-link">B Block, Road 21, Banani</a></li>
+            <li><a href="#" class="footer-link">Dhaka 1213, Bangladesh</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        © 2025 ExamHelpBD. All rights reserved. Helping Bangladesh students achieve global education since 2012.
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    // Mobile Navigation Toggle
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('navMenu');
+    
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      navToggle.classList.toggle('active');
+    });
+    
+    // Close mobile menu when clicking a link
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+        navToggle.classList.remove('active');
+      });
+    });
+    
+    // Header scroll effect
+    const header = document.querySelector('.header');
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+    
+    // Floating Consultation Button
+    const floatingConsultation = document.getElementById('floatingConsultation');
+    const consultationTrigger = document.getElementById('consultationTrigger');
+    const consultationOptions = document.getElementById('consultationOptions');
+    
+    // Hide floating button when near footer
+    window.addEventListener('scroll', () => {
+      const footer = document.querySelector('.footer');
+      const footerRect = footer.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+      
+      if (footerRect.top < windowHeight) {
+        floatingConsultation.classList.add('hidden');
+      } else {
+        floatingConsultation.classList.remove('hidden');
+      }
+    });
+    
+    // Toggle consultation options
+    consultationTrigger.addEventListener('click', () => {
+      consultationOptions.classList.toggle('show');
+    });
+    
+    // Close consultation options when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!floatingConsultation.contains(e.target)) {
+        consultationOptions.classList.remove('show');
+      }
+    });
+    
+    // FAQ Accordion
+    const faqItems = document.querySelectorAll('.faq-item');
+    
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      
+      question.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        
+        // Close all FAQ items
+        faqItems.forEach(faq => faq.classList.remove('active'));
+        
+        // Open clicked item if it wasn't active
+        if (!isActive) {
+          item.classList.add('active');
         }
-
-        // Generate animated particles
-        function createParticles() {
-            const particlesContainer = document.getElementById('particles');
-            if (!particlesContainer) return;
-            
-            for (let i = 0; i < 15; i++) {
-                const particle = document.createElement('div');
-                particle.className = 'particle';
-                particle.style.left = Math.random() * 100 + '%';
-                particle.style.animationDelay = Math.random() * 15 + 's';
-                particle.style.animationDuration = (15 + Math.random() * 10) + 's';
-                particlesContainer.appendChild(particle);
-            }
+      });
+    });
+    
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href !== '#') {
+          e.preventDefault();
+          const target = document.querySelector(href);
+          if (target) {
+            const headerHeight = header.offsetHeight;
+            const targetPosition = target.offsetTop - headerHeight;
+            window.scrollTo({
+              top: targetPosition,
+              behavior: 'smooth'
+            });
+          }
         }
-
-        // FAQ Accordion
-        function toggleFAQ(element) {
-            const faqItem = element.parentElement;
-            const allItems = document.querySelectorAll('.faq-item');
-            
-            // Close all other items
-            allItems.forEach(item => {
-                if (item !== faqItem) {
-                    item.classList.remove('active');
-                }
-            });
-            
-            // Toggle current item
-            faqItem.classList.toggle('active');
-        }
-
-        // Mobile menu toggle
-        function toggleMobileMenu() {
-            const mobileNav = document.getElementById('mobileNav');
-            mobileNav.classList.toggle('active');
-        }
-
-        // Smooth scroll for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    const headerOffset = 80;
-                    const elementPosition = target.getBoundingClientRect().top;
-                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-                    window.scrollTo({
-                        top: offsetPosition,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-        // Update active nav link on scroll
-        window.addEventListener('scroll', () => {
-            const sections = document.querySelectorAll('section');
-            const navLinks = document.querySelectorAll('.nav-links a');
-            
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (window.pageYOffset >= sectionTop - 100) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href').slice(1) === current) {
-                    link.classList.add('active');
-                }
-            });
-        });
-
-        // Header scroll effect
-        let lastScroll = 0;
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            const currentScroll = window.pageYOffset;
-
-            if (currentScroll > 50) {
-                header.style.backdropFilter = 'blur(20px)';
-                header.style.background = 'rgba(255, 255, 255, 0.95)';
-                header.style.boxShadow = '0 1px 3px rgba(0,0,0,0.1)';
-            } else {
-                header.style.backdropFilter = 'blur(20px)';
-                header.style.background = 'rgba(255, 255, 255, 0.8)';
-                header.style.boxShadow = 'none';
-            }
-
-            lastScroll = currentScroll;
-        });
-
-        // Intersection Observer for reveal animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('revealed');
-                    // Optional: stop observing after reveal
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, observerOptions);
-
-        // Initialize on DOM load
-        document.addEventListener('DOMContentLoaded', () => {
-            // Initialize countries carousel
-            initCountriesCarousel();
-            
-            // Create particles
-            createParticles();
-            
-            // Observe elements for animation
-            const revealElements = document.querySelectorAll('.reveal-on-scroll');
-            revealElements.forEach(el => {
-                observer.observe(el);
-            });
-
-            // Add stagger effect to exam tags
-            const examTags = document.querySelectorAll('.exam-tag');
-            examTags.forEach((tag, index) => {
-                tag.style.animationDelay = `${index * 0.05}s`;
-                tag.style.animation = 'fadeInUp 0.6s ease forwards';
-                tag.style.opacity = '0';
-            });
-        });
-
-        // Performance optimization - lazy load images
-        if ('IntersectionObserver' in window) {
-            const imageObserver = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const img = entry.target;
-                        img.classList.add('loaded');
-                        observer.unobserve(img);
-                    }
-                });
-            });
-
-            document.querySelectorAll('img').forEach(img => {
-                imageObserver.observe(img);
-            });
-        }
-    </script>
+      });
+    });
+  </script>
 </body>
 </html>
